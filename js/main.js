@@ -22,24 +22,34 @@ const rowPageWrap2 = document.querySelector(".row_page_wrap2");
 
 
 //nav
+// gsap.set(".nav", { y: -100 });
 
-gsap.set(".nav", { y: -100 });
-const showAnim = gsap.from('.nav', {
-  yPercent: 100,
-  paused: true,
-  duration: 0.2
-}).progress(1);
+// const showAnim = gsap.from('.nav', {
+//   yPercent: 100,
+//   paused: true,
+//   duration: 0.3
+// }).progress(1);
 
-ScrollTrigger.create({
-  trigger: "#section5",
-  start: "top bottom",
-  end: 8000,
-  markers: true,
-  onUpdate: (self) => {
-    self.direction === -1 ? showAnim.play() : showAnim.reverse()
+
+// ScrollTrigger.create({
+//   trigger: "#section2",
+//   start: "top top",
+//   end: 8000,
+//   markers: true,
+//   onUpdate: (self) => {
+//     self.direction === -1 ? showAnim.play() : showAnim.reverse()
+//   }
+// });
+
+window.addEventListener("scroll", () => {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY;
+
+  if (scrollTop > window.innerWidth * 3) {
+    document.querySelector(".nav").classList.add("show");
+  } else {
+    document.querySelector(".nav").classList.remove("show");
   }
 });
-
 
 function horizontalScrolling(wrap, page) {
   gsap.to(wrap, {
