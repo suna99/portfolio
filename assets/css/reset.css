@@ -103,6 +103,207 @@ button {
   width: 100%;
 }
 
+/* right_cont */
+.right_cont_subtitle span{
+  position: relative;
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 40px;
+}
+
+.right_cont_subtitle::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: url(../svg/logo_icon.svg);
+  background-position: center;
+  background-size: contain;
+}
+
+.right_cont_title strong{
+  margin-top: 8px;
+  display: block;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 2.5px #1941b8;
+}
+
+.right_cont_desc p{
+margin-top: 8px;
+font-size:24px;
+width: 85%;
+height: 249px;
+padding: 34px;
+line-height: 1.5;
+border: #1941b8 1px dotted;
+color: #222;
+}
+
+/* right_btn */
+.right_cont_btn{
+  display: flex;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.right_cont_btn .view_btn{
+  width: 180px;
+  height: 50px;
+  border: #1941b8 2px solid;
+  border-radius: 100px;
+  line-height: 50px;
+  margin-left: 20px;
+  position: relative;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.right_cont_btn .view_btn:hover{
+  transform: translate(-8px, -8px);
+  box-shadow: 8px 8px #1941b8;
+}
+
+.right_cont_btn .view_btn a{
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1941b8;
+  padding-left: 30px;
+}
+
+.right_cont_btn .view_btn a::after{
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 20px;
+  background: url(../svg/btn_arrow_icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translate(30%, -50%);
+}
+
+
+.right_cont_btn .code_btn{
+  width: 190px;
+  height: 50px;
+  border: #1941b8 2px solid;
+  border-radius: 100px;
+  line-height: 50px;
+  margin-left: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.right_cont_btn .code_btn:hover{
+  transform: translate(-8px, -8px);
+  box-shadow: 8px 8px #1941b8;
+}
+
+.right_cont_btn .code_btn a{
+  width: 190px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1941b8;
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.right_cont_btn .code_btn a::after{
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 20px;
+  background: url(../svg/btn_arrow_icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translate(30%, -50%);
+}
+
+/* right_btn.white */
+.right_cont_btn.white .view_btn{
+  width: 180px;
+  height: 50px;
+  border: #fff 2px solid;
+  background: none;
+  border-radius: 100px;
+  line-height: 50px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.right_cont_btn.white .view_btn:hover{
+  transform: translate(-8px, -8px);
+  box-shadow: 8px 8px #fff;
+}
+
+.right_cont_btn.white .view_btn a{
+  width: 180px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.right_cont_btn.white .view_btn a::after{
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 20px;
+  background: url(../svg/btn_arrow_icon_white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translate(30%, -50%);
+}
+
+.right_cont_btn.white .code_btn{
+  width: 190px;
+  height: 50px;
+  border: #fff 2px solid;
+  border-radius: 100px;
+  line-height: 50px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.right_cont_btn.white .code_btn:hover{
+  transform: translate(-8px, -8px);
+  box-shadow: 8px 8px #fff;
+}
+
+.right_cont_btn.white .code_btn a{
+  width: 190px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.right_cont_btn.white .code_btn a::after{
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 20px;
+  background: url(../svg/btn_arrow_icon_white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50%;
+  transform: translate(30%, -50%);
+}
+
+
 /* IR 효과 */
 /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
 .ir_pm {
