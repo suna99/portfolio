@@ -10,12 +10,12 @@ const section8 = document.querySelector("#section8");
 const list_btn = document.querySelector("a.flip-btn");
 
 //버튼 클릭
-document.querySelectorAll(".portfolio_list ul li a").forEach( li => {
+document.querySelectorAll(".portfolio_list ul li a").forEach(li => {
   li.addEventListener("click", e => {
-      e.preventDefault();
-      document.querySelector(li.getAttribute("href")).scrollIntoView({
-          behavior: "smooth"
-      });
+    e.preventDefault();
+    document.querySelector(li.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
   });
 });
 
@@ -30,7 +30,13 @@ function scroll() {
 
   //document.querySelector(".scroll").innerHTML = scrollTop;
 
-  if (scrollTop < 5000) {
+  if (scrollTop < 1700) {
+    document.querySelector(".cover").style.display = 'block';
+  } else {
+    document.querySelector(".cover").style.display = 'none';
+  }
+
+  if (scrollTop < 8000 && scrollTop > 1600) {
     document.querySelector(".sec1_1").style.display = 'flex';
     document.querySelector(".sec1_2").style.zIndex = '9001';
   } else {

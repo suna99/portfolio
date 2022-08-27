@@ -91,9 +91,9 @@
   padding: 120px 34px 34px 34px;
 }
 
-/* .section1, */
+/* .section1, 
 .sec1_2,
-.section2,
+.section2,*/
 .section3,
 .section4,
 .section5,
@@ -105,8 +105,8 @@
 
 /* cover */
 .cover {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -114,33 +114,58 @@
 
 .cloud_wrap {
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  background: #fff;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: nowrap;
-  background: url(../svg/section5_star.svg);
-  background-size: 50vw 50vh;
+  overflow: hidden;
+  background: url(../svg/cover_sky_bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #1941b8;
 }
 
-.cloud_left {
+.cloud_left img{
   position: absolute;
   top: 0;
   left: 0;
-  width: 60%;
+  width: auto;
   height: 100%;
-  background: #1941b8;
-  transform: translate(0, 0);
+  object-fit: cover;
+  object-position: left bottom;
+  z-index: 3;
 }
 
-.cloud_right {
+.cloud_right img{
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
+  width: auto;
   height: 100%;
-  background: #1941b8;
-  transform: translate(0, 0);
+  object-fit: cover;
+  object-position: right bottom;
+  z-index: 4;
+}
+
+.min_cloud_left img{
+  position: absolute;
+  width: 40%;
+  height: auto;
+  top: 18%;
+  left: 9%;
+  z-index: 1;
+  object-fit: contain;
+}
+
+.min_cloud_right img{
+  position: absolute;
+  width: 40%;
+  height: auto;
+  z-index: 2;
+  top: 25%;
+  right: 5%;
+  object-fit: cover;
 }
 
 /* section1 */
@@ -173,88 +198,35 @@
   font-weight: 700;
   display: inline-block;
   letter-spacing: -3px;
-  line-height: 0.88;
-}
-
-.sec1_1 .title .title_top {
-  height: 65%;
-  /* overflow: hidden; */
 }
 
 .sec1_1 .title strong {
   display: block;
-  /* animation: showTopText 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-  transform: translate(0, 220%); */
+  line-height: 1;
 }
 
 .sec1_1 .title .text_wrap {
   display: flex;
   align-content: center;
+  
 }
 
 .sec1_1 .title .arrow_icon {
   width: 498px;
-  height: 105px;
+  height: auto;
   background: url(../svg/arrow_icon.svg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
   margin-bottom: 22px;
-  /* transform: scaleX(0);
-  transform-origin: left;
-  animation: headerArrow 0.5s;
-  animation-delay: 1.35s;
-  animation-fill-mode: forwards; */
-}
-
-@keyframes headerArrow {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(100%);
-  }
-}
-
-.sec1_1 .title .title_bottom {
-  height: 65%;
-  overflow: hidden;
 }
 
 .sec1_1 .title span {
   display: block;
   -webkit-text-stroke: 3px #1941b8;
   letter-spacing: 1px;
-  padding-top: 3px;
+  line-height: 1;
   color: rgba(255, 255, 255, 0);
-  /* transform: translate(0, -100%);
-  animation: showBottomText 0.5s;
-  animation-delay: 1.75s;
-  animation-fill-mode: forwards; */
-}
-
-@keyframes showTopText {
-  0% {
-    transform: translate3d(0, 220%, 0);
-  }
-  40%,
-  60% {
-    transform: translate3d(0, 100%, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes showBottomText {
-  0% {
-    transform: translate3d(0, -100%, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
 }
 
 .sec1_1 .email {
@@ -262,20 +234,6 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   margin-bottom: -20px;
-  /* transform: translateY(150%);
-  animation: headerEmail 0.9s;
-  animation-delay: 1.65s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out; */
-}
-
-@keyframes headerEmail {
-  0% {
-    transform: translateY(150%);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 .sec1_1 .email .name {
@@ -309,15 +267,6 @@
   width: 90%;
 }
 
-@keyframes headerRightMove {
-  0% {
-    transform: translateX(-150%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .sec1_1 .portfolio_list {
   width: 21.436%;
   margin-top: auto;
@@ -328,11 +277,6 @@
 .sec1_1 .portfolio_list ul {
   width: 100%;
   height: 100%;
-  /* transform: translateX(-150%);
-  animation: headerRightMove 0.9s;
-  animation-delay: 3.2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out; */
 }
 
 .sec1_1 .portfolio_list .flip-btn {

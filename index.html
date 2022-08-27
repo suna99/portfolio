@@ -24,8 +24,8 @@
 
 <body>
   <nav id="nav" class="nav" 
-      data-3100="transform: translatey(-100%);" 
-      data-4000="transform: translatey(0%);">
+      data-7600="transform: translatey(-150%);" 
+      data-8700="transform: translatey(0%);">
     <div class="logo_cont">
       <div class="logo_icon"></div>
       <strong class="logo_txt">CHOISUNA - PORTFOLIO</strong>
@@ -38,21 +38,39 @@
   </nav>
 
   <main id="main">
-    <!-- <div class="cover">
+    <div class="cover">
       <div class="cloud_wrap"
-          data-100="transform: scale(1); opacity: 1;" 
-          data-1600="transform: scale(5); opacity: 1;"
-          data-1900="transform: scale(10); opacity: 0;">
-        <div class="cloud_left" 
+          data-100="transform: scale(1) translate(0%, 0%);" 
+          data-1600="transform: scale(7) translate(10%, -10%);"
+          >
+        <div class="cloud_left">
+          <img src="./assets/svg/cloud_left.svg" alt="cloud_left"
           data-0="transform: translate(0%, 0%);" 
-          data-1000="transform: translate(-100%, 0%);">
+          data-1000="transform: translate(-80%, 0%);"
+          >
         </div>
-        <div class="cloud_right" 
+        <div class="cloud_right">
+          <img src="./assets/svg/cloud_right.svg" alt="cloud_right"
           data-50="transform: translate(0%, 0%);" 
-          data-1000="transform: translate(100%, 0%);">
+          data-1000="transform: translate(80%, 0%);"
+          >
+        </div>
+        <div class="min_cloud_left">
+          <img src="./assets/svg/min_cloud_left.svg" alt="min_cloud_left"
+          data-100="transform: translatex(0%);"
+          data-500="transform: translatex(-10%);"
+          data-1000="transform: translatex(-40%);"
+          >
+        </div>
+        <div class="min_cloud_right">
+          <img src="./assets/svg/min_cloud_right.svg" alt="min_cloud_right"
+          data-200="transform: translatex(0%);"
+          data-700="transform: translatex(-10%);"
+          data-1100="transform: translatex(4%);"
+          >
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- section1 -->
     <!--  1. header
@@ -63,32 +81,29 @@
           <div class="header">
             <div class="header_wrap">
               <div class="title">
-                <div class="title_top">
                   <strong
-                  data-1500="transform:translatex(-100%)"
-                  data-2000="transform:translatex(0%)"
+                  data-3000="transform:translatex(-100%)"
+                  data-4000="transform:translatex(0%)"
                   >FRONTEND</strong>
                   <div class="text_wrap"
-                  data-1600="transform:translatex(-150%)"
-                  data-2100="transform:translatex(0%)">
+                  data-3200="transform:translatex(-150%)"
+                  data-4200="transform:translatex(0%)">
                     <strong>DEV</strong>
                     <div class="arrow_icon"></div>
                   </div>
-                </div>
-                <div class="title_bottom"
-                    data-1700="transform:translatex(-200%)"
-                    data-2200="transform:translatex(0%)">
-                  <span>PORTFOLIO</span>
-                </div>
+                  <span
+                    data-3400="transform:translatex(-200%)"
+                    data-4400="transform:translatex(0%)"
+                  >PORTFOLIO</span>
               </div>
               <div class="email">
                 <span class="name"
-                    data-1600="transform:translatey(150%)"
-                    data-2100="transform:translatey(0%)"
+                    data-4500="transform:translatey(150%)"
+                    data-5000="transform:translatey(0%)"
                 >CHOI SUN A</span>
                 <address
-                    data-1700="transform:translatey(200%)"
-                    data-2200="transform:translatey(0%)"
+                    data-4700="transform:translatey(200%)"
+                    data-5200="transform:translatey(0%)"
                 ><a href="mailto:choisuna0615@gmail.com">choisuna0615@gmail.com</a></address>
               </div>
             </div>
@@ -98,18 +113,19 @@
 
           <div class="img_wrap">
             <img src="./assets/svg/airplane_img.svg" alt="airplane_img" class="airplane_img"
-            data-0="transform: scale(40); translate(10%, 100%)"
-            data-1500="transform: scale(1); translate(0%, 0%)">
+            data-1600="transform:scale(15) translate(-17%, 15%);"
+            data-3000="transform:scale(1) translate(0%, 0%);"
+            >
             </img>
           </div>
 
           <div class="v-line"></div>
 
-          <div class="portfolio_list"
-              data-2300="transform:translatex(150%);"
-              data-2800="transform:translatex(0%);"
-          >
-            <ul>
+          <div class="portfolio_list">
+            <ul
+            data-5500="transform:translatex(-150%);"
+            data-6500="transform:translatex(0%);"
+            >
               <li>
                 <a href="#section2" class="flip-btn">
                   <div class="front">
@@ -193,12 +209,12 @@
         </div>
 
         <div class="sec1_2" 
-            data-3000="transform: translatex(100%);" 
-            data-4000="transform: translatex(0%);">
+            data-7000="transform: translatex(100%);" 
+            data-8000="transform: translatex(0%);">
           <div class="img_wrap">
             <img src="./assets/img/about_me03.jpg" alt="about me img"
-              data-3100="width: 100vw; object-fit: cover; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;"
-              data-4000="width: 60vw; object-fit: cover; padding-top: 120px; padding-left: 34px; padding-right: 34px; padding-bottom: 34px;">
+              data-8000="width: 100vw; object-fit: cover; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;"
+              data-8700="width: 60vw; object-fit: cover; padding-top: 120px; padding-left: 34px; padding-right: 34px; padding-bottom: 34px;">
           </div>
         </div>
       </div>
@@ -208,8 +224,8 @@
     <!-- section2 sub -->
     <!--   about me sub -->
     <section id="section2" class="section2 sub" 
-            data-1500="transform: translatey(100%);"
-            data-1900="transform: translatey(0%);">
+            data-8710="transform: translatey(100%);"
+            data-9500="transform: translatey(0%);">
       <div class="sub_contain">
         <div class="sub_title">
           <strong>ABOUT</strong>
