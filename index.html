@@ -23,8 +23,9 @@
 </head>
 
 <body>
-
-  <nav id="nav" class="nav" data-1001="transform: translatey(-100%);" data-1500="transform: translatey(0%);">
+  <nav id="nav" class="nav" 
+      data-3100="transform: translatey(-100%);" 
+      data-4000="transform: translatey(0%);">
     <div class="logo_cont">
       <div class="logo_icon"></div>
       <strong class="logo_txt">CHOISUNA - PORTFOLIO</strong>
@@ -37,6 +38,22 @@
   </nav>
 
   <main id="main">
+    <!-- <div class="cover">
+      <div class="cloud_wrap"
+          data-100="transform: scale(1); opacity: 1;" 
+          data-1600="transform: scale(5); opacity: 1;"
+          data-1900="transform: scale(10); opacity: 0;">
+        <div class="cloud_left" 
+          data-0="transform: translate(0%, 0%);" 
+          data-1000="transform: translate(-100%, 0%);">
+        </div>
+        <div class="cloud_right" 
+          data-50="transform: translate(0%, 0%);" 
+          data-1000="transform: translate(100%, 0%);">
+        </div>
+      </div>
+    </div> -->
+
     <!-- section1 -->
     <!--  1. header
           2. about me img-->
@@ -44,33 +61,57 @@
       <div class="pin-wrap">
         <div class="sec1_1 main_container">
           <div class="header">
-            <div class="title">
-              <strong>FRONTEND</strong>
-              <div class="text_wrap">
-                <strong>DEV</strong>
-                <div class="arrow_icon"></div>
+            <div class="header_wrap">
+              <div class="title">
+                <div class="title_top">
+                  <strong
+                  data-1500="transform:translatex(-100%)"
+                  data-2000="transform:translatex(0%)"
+                  >FRONTEND</strong>
+                  <div class="text_wrap"
+                  data-1600="transform:translatex(-150%)"
+                  data-2100="transform:translatex(0%)">
+                    <strong>DEV</strong>
+                    <div class="arrow_icon"></div>
+                  </div>
+                </div>
+                <div class="title_bottom"
+                    data-1700="transform:translatex(-200%)"
+                    data-2200="transform:translatex(0%)">
+                  <span>PORTFOLIO</span>
+                </div>
               </div>
-              <span>PORTFOLIO</span>
-            </div>
-            <div class="email">
-              <span class="name">CHOI SUN A</span>
-              <address><a href="mailto:choisuna0615@gmail.com">choisuna0615@gmail.com</a></address>
+              <div class="email">
+                <span class="name"
+                    data-1600="transform:translatey(150%)"
+                    data-2100="transform:translatey(0%)"
+                >CHOI SUN A</span>
+                <address
+                    data-1700="transform:translatey(200%)"
+                    data-2200="transform:translatey(0%)"
+                ><a href="mailto:choisuna0615@gmail.com">choisuna0615@gmail.com</a></address>
+              </div>
             </div>
           </div>
 
           <div class="v-line"></div>
 
           <div class="img_wrap">
-            <div class="airplane_img">
-            </div>
+            <img src="./assets/svg/airplane_img.svg" alt="airplane_img" class="airplane_img"
+            data-0="transform: scale(40); translate(10%, 100%)"
+            data-1500="transform: scale(1); translate(0%, 0%)">
+            </img>
           </div>
 
           <div class="v-line"></div>
 
-          <div class="portfolio_list">
+          <div class="portfolio_list"
+              data-2300="transform:translatex(150%);"
+              data-2800="transform:translatex(0%);"
+          >
             <ul>
               <li>
-                <a href="#" class="flip-btn">
+                <a href="#section2" class="flip-btn">
                   <div class="front">
                     <span class="list_num">01</span>
                     <strong class="list_tit">ABOUT ME</strong>
@@ -83,7 +124,7 @@
                 <div class="h-line"></div>
               </li>
               <li>
-                <a href="#" class="flip-btn">
+                <a href="#section4" class="flip-btn">
                   <div class="front">
                     <span class="list_num">02</span>
                     <strong class="list_tit">SKILLS</strong>
@@ -96,7 +137,7 @@
                 <div class="h-line"></div>
               </li>
               <li>
-                <a href="#" class="flip-btn">
+                <a href="#section5" class="flip-btn">
                   <div class="front">
                     <span class="list_num">03</span>
                     <strong class="list_tit">JAVASCRIPT</strong>
@@ -109,7 +150,7 @@
                 <div class="h-line"></div>
               </li>
               <li>
-                <a href="#" class="flip-btn">
+                <a href="#section6" class="flip-btn">
                   <div class="front">
                     <span class="list_num">04</span>
                     <strong class="list_tit">SITE WORKS</strong>
@@ -122,7 +163,7 @@
                 <div class="h-line"></div>
               </li>
               <li>
-                <a href="#" class="flip-btn">
+                <a href="#section7" class="flip-btn">
                   <div class="front">
                     <span class="list_num">05</span>
                     <strong class="list_tit">FRONT-END</strong>
@@ -135,7 +176,7 @@
                 <div class="h-line"></div>
               </li>
               <li>
-                <a href="#" class="flip-btn">
+                <a href="#section8" class="flip-btn">
                   <div class="front">
                     <span class="list_num">06</span>
                     <strong class="list_tit">THANK YOU</strong>
@@ -151,11 +192,13 @@
           </div>
         </div>
 
-        <div class="sec1_2" data-100="transform: translatex(100%);" data-1000="transform: translatex(0%);">
+        <div class="sec1_2" 
+            data-3000="transform: translatex(100%);" 
+            data-4000="transform: translatex(0%);">
           <div class="img_wrap">
-            <img src="./assets/img/about_me03.jpg" alt="about me img" data-1300="width: 100vw;"
-              data-1500="width: 80vw; object-fit: cover; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;"
-              data-1900="width: 60vw; object-fit: cover; padding-top: 120px; padding-left: 34px; padding-right: 34px; padding-bottom: 34px;">
+            <img src="./assets/img/about_me03.jpg" alt="about me img"
+              data-3100="width: 100vw; object-fit: cover; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;"
+              data-4000="width: 60vw; object-fit: cover; padding-top: 120px; padding-left: 34px; padding-right: 34px; padding-bottom: 34px;">
           </div>
         </div>
       </div>
@@ -164,7 +207,9 @@
 
     <!-- section2 sub -->
     <!--   about me sub -->
-    <section id="section2" class="section2 sub" data-1300="transform: translatey(100%);" data-1900="transform: translatey(0%);">
+    <section id="section2" class="section2 sub" 
+            data-1500="transform: translatey(100%);"
+            data-1900="transform: translatey(0%);">
       <div class="sub_contain">
         <div class="sub_title">
           <strong>ABOUT</strong>
@@ -197,8 +242,11 @@
 
     <!-- section3 -->
     <!--   skills -->
-    <section id="section3" class="section3" data-2400="transform: translate(0%, 100%);" data-2900="transform: translate(0%, 0%);"
-      data-3100="transform: translate(0%, 0%);" data-6000="transform: translate(-71.99%, 0%);">
+    <section id="section3" class="section3" 
+            data-2400="transform: translate(0%, 100%);"
+            data-2900="transform: translate(0%, 0%);" 
+            data-3100="transform: translate(0%, 0%);"
+            data-6000="transform: translate(-71.99%, 0%);">
       <div class="pin-wrap">
         <div class="sec3_1 container">
           <div class="journey_icon">
@@ -228,7 +276,9 @@
 
     <!-- section4 sub -->
     <!--   skills sub -->
-    <section id="section4" class="section4 sub" data-6100="transform: translatey(150%);" data-8000="transform: translatey(0%);">
+    <section id="section4" class="section4 sub" 
+            data-6100="transform: translatey(150%);"
+            data-8000="transform: translatey(0%);">
       <div class="sub_contain">
         <div class="sub_title">
           <strong>HTML & CSS</strong>
@@ -292,12 +342,14 @@
 
     <!-- section5 -->
     <!--  1. earth work
-          2. javascript -->
+                2. javascript -->
     <section id="section5" class="section5">
       <!-- sec5_1 -->
       <div class="sec5_1">
         <div class="sec5_1_wrap">
-          <div class="sec5_1_cont" data-8000="transform: translatey(150%); " data-9000="transform: translatey(0%);">
+          <div class="sec5_1_cont" 
+              data-8000="transform: translatey(150%); " 
+              data-9000="transform: translatey(0%);">
             <div class="airplane_wrap">
             </div>
             <div class="earth_wrap">
@@ -388,12 +440,14 @@
       <!-- sec5_2 -->
       <div class="sec5_2">
         <div class="sec5_2_wrap">
-          <div class="sec5_2_cont_title" data-9500="transform: translatey(-200%);"
-            data-9900="transform: translatey(0%);">
+          <div class="sec5_2_cont_title" 
+              data-9500="transform: translatey(-200%);"
+              data-9900="transform: translatey(0%);">
             <strong>JAVASCRIPT</strong>
           </div>
-          <div class="sec5_2_cont_wrap" data-7500="transform: translatex(100%);"
-            data-15000="transform: translatex(-66.8%);">
+          <div class="sec5_2_cont_wrap" 
+              data-7500="transform: translatex(100%);"
+              data-15000="transform: translatex(-66.8%);">
             <div class="cont_1 sec5_2_cont">
               <div class="sec5_2_text_wrap">
                 <div class="right_cont_subtitle">
@@ -474,9 +528,11 @@
     <section id="section6" class="section6">
       <!-- sec6_1 -->
       <div class="sec6_1">
-        <div class="sec6_1_wrap" data-16000="transform: translate(0% ,100%);"
-          data-17000="transform: translate(0%, 0%);">
-          <div class="text_wrap" data-16500="transform: translate(0%, 0%);"
+        <div class="sec6_1_wrap" 
+            data-16000="transform: translate(0% ,100%);"
+            data-17000="transform: translate(0%, 0%);">
+          <div class="text_wrap" 
+            data-16500="transform: translate(0%, 0%);"
             data-18000="transform: translate(-50%, 0%);">
             <div class="line_1 text_line">
               <strong>SITE</strong><span>WORKS</span><strong>SITE</strong><span>WORKS</span><strong>SITE</strong><span>WORKS</span><strong>SITE</strong><span>WORKS</span><strong>SITE</strong><span>WORKS</span><strong>SITE</strong><span>WORKS</span>
@@ -495,8 +551,9 @@
       <!-- sec6_2 -->
       <div class="sec6_2">
         <div class="sec6_2_wrap">
-          <div class="cont_1 sec6_2_cont" data-18500="transform: translatex(100%);"
-            data-19500="transform: translatex(0%);">
+          <div class="cont_1 sec6_2_cont" 
+              data-18500="transform: translatex(150%);"
+              data-19500="transform: translatex(0%);">
             <div class="sec6_2_cont_title">
               <strong>WED STANDARD</strong>
               <div class="icon"></div>
@@ -523,8 +580,9 @@
             <div class="computer_img img1"></div>
           </div>
           <!-- //cont_1 -->
-          <div class="cont_2 sec6_2_cont" data-20000="transform: translatex(100%);"
-            data-21000="transform: translatex(5.16%);">
+          <div class="cont_2 sec6_2_cont" 
+              data-20000="transform: translatex(150%);"
+              data-21000="transform: translatex(5.16%);">
             <div class="sec6_2_cont_title">
               <strong>MEGABOX</strong>
               <div class="icon"></div>
@@ -551,8 +609,9 @@
             <div class="computer_img img2"></div>
           </div>
           <!-- //cont_2 -->
-          <div class="cont_3 sec6_2_cont" data-21500="transform: translatex(100%);"
-            data-22500="transform: translatex(10.31%);">
+          <div class="cont_3 sec6_2_cont" 
+              data-21500="transform: translatex(150%);"
+              data-22500="transform: translatex(10.31%);">
             <div class="sec6_2_cont_title">
               <strong>WED STANDARD</strong>
               <div class="icon"></div>
@@ -588,12 +647,16 @@
     <!-- section7 -->
     <!--   front-end -->
     <section id="section7" class="section7">
-      <div class="sec7" data-22500="transform: translatey(100%);" data-24500="transform: translatey(3%); ">
+      <div class="sec7" 
+          data-22500="transform: translatey(100%);" 
+          data-24500="transform: translatey(3%); ">
         <div class="sec7_container">
           <div class="sec7_title">
             <strong>FRONT-END</strong>
           </div>
-          <div class="sec7_wrap" data-25000="transform: translatey(0%);" data-26000="transform: translatey(-44.3%);>">
+          <div class="sec7_wrap" 
+              data-25000="transform: translatey(0%);" 
+              data-26000="transform: translatey(-44.3%);>">
             <div class="cont_1 sec7_cont">
               <div class="sec7_cont_wrap">
                 <div class="sec7_cont_txt_wrap">
@@ -642,7 +705,9 @@
 
     <!-- //section8 -->
     <!--   thanks -->
-    <section id="section8" class="section8" data-26500="transform: translatey(100%);" data-27000="transform: translatey(0%);>">
+    <section id="section8" class="section8" 
+            data-26500="transform: translatey(100%);"
+            data-27000="transform: translatey(0%);>">
       <div class="sec8">
         <div class="sec8_wrap">
           <div class="top_wrap">
@@ -755,54 +820,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
-  <script>
-    let s = skrollr.init({
-      smoothScrolling: true
-    });
-
-    function scroll() {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-      //document.querySelector(".scroll").innerHTML = scrollTop;
-
-      if (scrollTop < 1000) {
-        document.querySelector(".sec1_1").style.display = 'flex';
-        document.querySelector(".sec1_2").style.zIndex = '9001';
-      } else {
-        document.querySelector(".sec1_1").style.display = 'none';
-        document.querySelector(".sec1_2").style.zIndex = '1000';
-      }
-
-      scrollTop >= 2900 ? document.querySelector("#nav").classList.add("change") : document.querySelector("#nav").classList.remove("change");
-
-      if (scrollTop >= 8500) document.querySelector("#nav").classList.remove("change");
-
-      if (scrollTop < 15000) {
-        document.querySelector(".sec5_1").style.display = 'block';
-      } else {
-        document.querySelector(".sec5_1").style.display = 'none';
-      }
-
-      scrollTop >= 24520 ? document.querySelector("#nav").classList.add("change") : document.querySelector("#nav").classList.remove("change");
-
-      //document.querySelector("body").addEventListener('mousemove', eyeball);
-
-      // function eyeball(){
-      //   const eye = document.querySelectorAll(".eye");
-      //   eye.forEach( eye => {
-      //     let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
-      //     let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
-
-      //     let radian = Math.atan2(event.pageX - x, event.pageY - y);
-      //     let rot = (radian * (180 / Math.PI) * -1) + 270;
-      //     eye.style.transform = "rotate(" + rot + "deg)";
-      //   });
-      // }
-
-      requestAnimationFrame(scroll);
-    }
-    scroll();
-  </script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

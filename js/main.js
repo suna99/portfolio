@@ -1,99 +1,71 @@
-gsap.registerPlugin(ScrollTrigger);
-//gsap.defaults({ ease: "none", duration: 2 });
+const section1 = document.querySelector("#section1");
+const section2 = document.querySelector("#section2");
+const section3 = document.querySelector("#section3");
+const section4 = document.querySelector("#section4");
+const section5 = document.querySelector("#section5");
+const section6 = document.querySelector("#section6");
+const section7 = document.querySelector("#section7");
+const section8 = document.querySelector("#section8");
 
-const parallaxCont = document.getElementById(".parallax_cont");
-const parallaxItem = document.querySelector(".content_item");
-const rowPage1 = document.querySelector(".row_page1");
-const rowPage2 = document.querySelector(".row_page2");
-const rowPageWrap1 = document.querySelector(".row_page_wrap1");
-const rowPageWrap2 = document.querySelector(".row_page_wrap2");
+const list_btn = document.querySelector("a.flip-btn");
 
-// window.addEventListener("scroll", () => {
-//   let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY;
-//   let tl = new TimelineLite();
-
-//   if (scrollTop > document.getElementById("#section2").offsetTop) {
-//     tl.set( document.querySelector(".nav"), { className: '+=show' } , "start")
-//   } else {
-//     tl.to(document.querySelector(".nav"), 1, { display: 'none' });
-//   }
-
-// });
-
-
-//nav
-// gsap.set(".nav", { y: -100 });
-
-// const showAnim = gsap.from('.nav', {
-//   yPercent: 100,
-//   paused: true,
-//   duration: 0.3
-// }).progress(1);
-
-
-// ScrollTrigger.create({
-//   trigger: "#section2",
-//   start: "top top",
-//   end: 8000,
-//   markers: true,
-//   onUpdate: (self) => {
-//     self.direction === -1 ? showAnim.play() : showAnim.reverse()
-//   }
-// });
-
-window.addEventListener("scroll", () => {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY;
-
-  if (scrollTop > window.innerWidth * 3) {
-    document.querySelector(".nav").classList.add("show");
-  } else {
-    document.querySelector(".nav").classList.remove("show");
-  }
-});
-
-function horizontalScrolling(wrap, page) {
-  gsap.to(wrap, {
-    xPercent: -100,
-    x: () => innerWidth,
-    ease: "none",
-    invalidateOnRefresh: true,
-    scrollTrigger: {
-      trigger: page,
-      start: "top top",
-      markers: true,
-      scrub: 1,
-      pin: page,
-      end: "+=" + (innerWidth * 3)
-    },
+//버튼 클릭
+document.querySelectorAll(".portfolio_list ul li a").forEach( li => {
+  li.addEventListener("click", e => {
+      e.preventDefault();
+      document.querySelector(li.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+      });
   });
+});
+
+let s = skrollr.init({
+  smoothScrolling: true
+});
+
+
+
+function scroll() {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  //document.querySelector(".scroll").innerHTML = scrollTop;
+
+  if (scrollTop < 5000) {
+    document.querySelector(".sec1_1").style.display = 'flex';
+    document.querySelector(".sec1_2").style.zIndex = '9001';
+  } else {
+    document.querySelector(".sec1_1").style.display = 'none';
+    document.querySelector(".sec1_2").style.zIndex = '1000';
+  }
+
+  scrollTop >= 2900 ? document.querySelector("#nav").classList.add("change") : document.querySelector("#nav").classList.remove("change");
+
+  if (scrollTop >= 8500) document.querySelector("#nav").classList.remove("change");
+
+  if (scrollTop < 15000) {
+    document.querySelector(".sec5_1").style.display = 'block';
+  } else {
+    document.querySelector(".sec5_1").style.display = 'none';
+  }
+
+  scrollTop >= 24520 ? document.querySelector("#nav").classList.add("change") : document.querySelector("#nav").classList.remove("change");
+
+  //document.querySelector("body").addEventListener('mousemove', eyeball);
+
+  // function eyeball(){
+  //   const eye = document.querySelectorAll(".eye");
+  //   eye.forEach( eye => {
+  //     let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+  //     let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+
+  //     let radian = Math.atan2(event.pageX - x, event.pageY - y);
+  //     let rot = (radian * (180 / Math.PI) * -1) + 270;
+  //     eye.style.transform = "rotate(" + rot + "deg)";
+  //   });
+  // }
+
+  requestAnimationFrame(scroll);
 }
-
-horizontalScrolling(".row_page_wrap1", ".row_page1");
-horizontalScrolling(".row_page_wrap2", ".row_page2");
-horizontalScrolling(".row_page_wrap3", ".row_page3");
-horizontalScrolling(".row_page_wrap4", ".row_page4");
-
-
-ScrollTrigger.create({
-  trigger: '#section3',
-  pin: true,
-  start: 'top top',
-  scrub: 0.5,
-  endTrigger: "#section4",
-  end: "top bottom",
-  pinSpacing: false,
-  //markers: true
-});
-
-ScrollTrigger.create({
-  trigger: '#section5',
-  pin: true,
-  start: 'top top',
-  scrub: 0.5,
-  endTrigger: "#section7",
-  end: "top bottom",
-  pinSpacing: false,
-  //markers: true
-});
+scroll();
 
 
