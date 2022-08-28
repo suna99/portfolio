@@ -30,7 +30,7 @@ function scroll() {
 
   //document.querySelector(".scroll").innerHTML = scrollTop;
 
-  if (scrollTop < 1700) {
+  if (scrollTop < 4000) {
     document.querySelector(".cover").style.display = 'block';
   } else {
     document.querySelector(".cover").style.display = 'none';
