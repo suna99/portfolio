@@ -28,15 +28,15 @@ let s = skrollr.init({
 function scroll() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  //document.querySelector(".scroll").innerHTML = scrollTop;
+  document.querySelector(".scroll").innerHTML = scrollTop;
 
-  if (scrollTop < 4000) {
+  if (scrollTop < 2700) {
     document.querySelector(".cover").style.display = 'block';
   } else {
     document.querySelector(".cover").style.display = 'none';
   }
 
-  if (scrollTop < 8000 && scrollTop > 1600) {
+  if (scrollTop < 8100 && scrollTop > 2600) {
     document.querySelector(".sec1_1").style.display = 'flex';
     document.querySelector(".sec1_2").style.zIndex = '9001';
   } else {
