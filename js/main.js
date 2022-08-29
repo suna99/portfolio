@@ -23,12 +23,10 @@ let s = skrollr.init({
   smoothScrolling: true
 });
 
-
-
 function scroll() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  document.querySelector(".scroll").innerHTML = scrollTop;
+  document.querySelector(".scroll").innerHTML = Math.trunc(scrollTop);
 
   if (scrollTop < 2700) {
     document.querySelector(".cover").style.display = 'block';
@@ -47,6 +45,8 @@ function scroll() {
   scrollTop >= 2900 ? document.querySelector("#nav").classList.add("change") : document.querySelector("#nav").classList.remove("change");
 
   if (scrollTop >= 8500) document.querySelector("#nav").classList.remove("change");
+
+  
 
   if (scrollTop < 15000) {
     document.querySelector(".sec5_1").style.display = 'block';
@@ -74,4 +74,29 @@ function scroll() {
 }
 scroll();
 
+function stars(){
+  const count = 200;
+  const cloud_wrap = document.querySelector(".cloud_wrap");
+  let i = 0;
 
+  while (i < count){
+    const star = document.createElement("i");
+    const x = Math.floor(Math.random() * window.innerWidth)
+    const y = Math.floor(Math.random() * window.innerHeight)
+
+    const size = Math.random() * 4;
+    star.style.left = x + 'px';
+    star.style.top = y + 'px';
+    star.style.width = 2 + size + 'px';
+    star.style.height = 2 + size + 'px';
+
+    const duration = Math.random()*2;
+
+    star.style.animationDuration = 2+duration+ "s";
+    star.style.animationDelay = duration+ "s";
+
+    cloud_wrap.appendChild(star);
+    i++
+  }
+}
+stars();
