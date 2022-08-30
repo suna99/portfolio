@@ -146,6 +146,10 @@
   background: #fff;
   border-radius: 50%;
   animation: star linear infinite;
+  box-shadow: 0 0 10px #fff, 
+  0 0 20px #fff,
+  0 0 40px #fff,
+  0 0 80px #fff;
 }
 
 @keyframes star {
@@ -239,12 +243,12 @@
 .sec1_1 .title strong {
   display: block;
   line-height: 1;
-  margin-right: 10px;
 }
 
 .sec1_1 .title .text_wrap {
   display: flex;
   align-content: center;
+  height: auto;
 }
 
 .sec1_1 .title .arrow_icon {
@@ -255,6 +259,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   margin-bottom: 22px;
+  margin-left: -18%;
 }
 
 .sec1_1 .title span {
@@ -301,6 +306,45 @@
 .sec1_1 .img_wrap .airplane_img {
   position: absolute;
   width: 90%;
+  z-index: 1002;
+  background: url(../svg/airplane_cloud.svg);
+  background-repeat: repeat-x;
+  background-size: 500%;
+  animation: movebg 10s linear infinite;
+  background-position: 0 bottom;
+  border-radius: 1000px;
+  overflow: hidden;
+}
+
+@keyframes movebg {
+  0%{
+    background-position: 0 bottom;
+  }
+  100%{
+    background-position: 1813.17px bottom;
+  }
+}
+
+
+
+.sec1_1 .img_wrap .star_bg{
+  position: absolute;
+  width: 90%;
+  height: 75%;
+  border-radius: 1000px;
+  z-index: 1001;
+  background: #1941b8;
+}
+
+.star_bg i {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  animation: star linear infinite;
+  box-shadow: 0 0 10px #fff, 
+  0 0 20px #fff,
+  0 0 40px #fff,
+  0 0 80px #fff;
 }
 
 .sec1_1 .portfolio_list {
@@ -398,12 +442,11 @@
   top: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 85px;
   margin-left: auto;
   z-index: 2000;
 }
 
-.sec2 {
+.sec2{
   width: 100%;
   height: 100%;
   position: relative;
@@ -411,17 +454,41 @@
 
 .section2 .sub_contain {
   position: absolute;
-  top: 25%;
-  right: 10%;
-  width: 45%;
+  top: 30%;
+  right: 11%;
+  width: 40%;
   height: auto;
-  padding: 30px;
-  transform: rotate(0deg);
+  padding: 40px;
+}
+
+.section2 .reveal{
+  position: absolute;
+  top: 30%;
+  right: 11%;
+  width: 35%;
+  height: 48.4%;
+  z-index: 2001;
+  overflow: hidden;
+}
+
+.section2 .reveal > div{
+  width: 100%;
+  height: 34%;
+  background: #D1D9F1;
+}
+
+.section2 .reveal > div:first-child{
+  background: #E4E9F8;
+}
+
+.section2 .reveal > div:last-child{
+  background: #BAC6E9;
 }
 
 .section2 .sub_contain .sub_title {
   font-weight: 700;
   font-size: 54px;
+  line-height: 54px;
   margin-bottom: 10px;
 }
 
@@ -440,7 +507,6 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 1.5;
-  font-size: 100px;
   color: #222;
 }
 
@@ -452,13 +518,18 @@
   color: #fff;
 }
 
+.section2 .sub_contain.white .sub_title span {
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 1.4px #fff;
+}
+
 .section2 .sub_contain.white .sub_desc span {
   color: #fff;
 }
 
 .section2 .sub_contain.black {
   border: #1941b8 2px solid;
-  clip-path: polygon(38% 0, 100% 0, 100% 100%, 38% 100%);
+  clip-path: polygon(36.3% 0, 100% 0, 100% 100%, 36.3% 100%);
 }
 
 /* section3 */
