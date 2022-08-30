@@ -325,8 +325,6 @@
   }
 }
 
-
-
 .sec1_1 .img_wrap .star_bg{
   position: absolute;
   width: 90%;
@@ -334,6 +332,7 @@
   border-radius: 1000px;
   z-index: 1001;
   background: #1941b8;
+  overflow: hidden;
 }
 
 .star_bg i {
@@ -465,7 +464,7 @@
   position: absolute;
   top: 30%;
   right: 11%;
-  width: 35%;
+  width: 40%;
   height: 48.4%;
   z-index: 2001;
   overflow: hidden;
