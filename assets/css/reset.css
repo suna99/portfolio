@@ -53,6 +53,8 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   position: relative;
 }
 
@@ -127,11 +129,13 @@ button {
   margin-top: 8px;
   display: block;
   font-size: 70px;
-  color: rgba(255, 255, 255, 0);
+  color: #fff;
   -webkit-text-stroke: 2.5px #1941b8;
 }
 
+
 .right_cont_desc p {
+  font-family: "Noto Sans KR", sans-serif;
   margin-top: 8px;
   font-size: 24px;
   width: 85%;
