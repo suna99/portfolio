@@ -17,6 +17,11 @@ html {
   z-index: 20000;
 }
 
+/*mobile_nav*/
+#mobile_nav{
+  display: none;
+}
+
 /* nav */
 #nav {
   position: fixed;
@@ -103,11 +108,11 @@ html {
 }
 
 .main_container {
-  padding: 3.4rem;
+  padding: 1.5vw;
 }
 
 .container {
-  padding: 120px 34px 34px 34px;
+  padding: 3vw 1.8vw 1.8vw 1.8vw;
 }
 
 /* cover */
@@ -220,17 +225,12 @@ html {
   justify-content: space-between;
 }
 
-.sec1_1 .title {
-  font-size: 6.5vw;
-  font-weight: 800;
-  line-height: 0.88;
-  display: inline-block;
-}
-
 .sec1_1 .title strong {
   display: block;
   font-family: "Hanson-bold";
   font-weight: 800;
+  font-size: 6.5vw;
+  line-height: 0.8;
 }
 
 .sec1_1 .title .text_wrap {
@@ -241,47 +241,50 @@ html {
 
 .sec1_1 .title .arrow_icon {
   width: 100vw;
-  height: 6.5vw;
+  height: 7vw;
   background: url(../svg/arrow_icon.svg);
-  background-position: left top;
+  background-position: left center;
   background-repeat: no-repeat;
-  background-size: 70%;
-  margin-left: 0.5vw;
+  background-size: 63%;
+  margin-left: 0.3vw;
 }
 
 .sec1_1 .title span {
   font-family: "Hanson-bold";
+  font-size: 6.5vw;
   display: block;
-  -webkit-text-stroke: 2px #1941b8;
-  line-height: 0.88;
+  -webkit-text-stroke: 0.14vw #1941b8;
+  letter-spacing: 0.2vw;
+  line-height: 0.8;
   color: rgba(255, 255, 255, 0);
 }
 
 .sec1_1 .email {
   display: flex;
+  width: 100%;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.sec1_1 .email .name {
+.sec1_1 .email .name{
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 3.2em;
+  font-size: 3vw;
 }
 
 .sec1_1 .email address a {
   font-family: "Poppins", sans-serif;
-  font-size: 2.4rem;
+  font-size: 2vw;
   font-weight: 400;
   margin-top: auto;
   color: #1941b8;
-  padding-right: 34px;
+  padding-right: 1.5vw;
 }
 
 .sec1_1 .img_wrap {
-  width: 23.974%;
-  height: 100vh;
+  width: 23.9vw;
+  height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -289,10 +292,9 @@ html {
 }
 
 .sec1_1 .airplane_img_wrap {
-  width: 90%;
-  height: 100%;
+  width: 87%;
+  height: 77%;
   position: relative;
-  bottom: 6.5rem;
 }
 
 .sec1_1 .airplane_img_wrap .airplane_img {
@@ -311,15 +313,15 @@ html {
 
 .sec1_1 .airplane_img_wrap .star_bg {
   width: 90%;
-  height: 64%;
-  top: 34%;
-  position: relative;
-  left: 5%;
+  height: 100%;
+  position: absolute;
+  left: 4%;
+  bottom: 0;
   border-radius: 1000px;
   overflow: hidden;
   background: url(../svg/sky_bg.svg) no-repeat;
   background-position: 0 bottom;
-  background-size: 100%;
+  background-size: 103%;
 }
 
 .sec1_1 .airplane_img_wrap .clouds_img {
@@ -355,7 +357,7 @@ html {
 }
 
 .sec1_1 .portfolio_list {
-  width: 21.436%;
+  width: 21.436vw;
   margin-top: auto;
   perspective: 1000px;
   overflow: hidden;
@@ -368,7 +370,7 @@ html {
 
 .sec1_1 .portfolio_list .flip-btn {
   margin: 0 auto;
-  height: 12.6rem;
+  height: 12vh;
   display: flex;
   align-items: center;
   display: block;
@@ -380,33 +382,38 @@ html {
   transform: rotateX(-90deg);
 }
 
+.sec1_1 .portfolio_list .flip-btn .front,
+.sec1_1 .portfolio_list .flip-btn .back{
+  height: 12vh;
+  line-height: 12vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .sec1_1 .portfolio_list .flip-btn .front {
-  height: 12.6rem;
-  line-height: 13.8rem;
-  transform: translateZ(6.3rem);
+  transform: translateZ(6vh);
 }
 
 .sec1_1 .portfolio_list .flip-btn .back {
-  height: 12.6rem;
-  line-height: 13.8rem;
   background: #1941b8;
-  color: #fff;
-  transform: rotateX(90deg) translateZ(18.9rem);
+  transform: rotateX(90deg) translateZ(18vh);
 }
 
 .sec1_1 .portfolio_list .list_num {
   font-family: "Fulbo";
   display: inline-block;
-  font-size: 4.5rem;
+  font-size: 2.8vw;
   font-weight: 700;
-  margin-right: 1.2rem;
-  margin-left: 2.6rem;
+  margin-right: 1vw;
+  margin-left: 1.5vw;
   color: #1941b8;
 }
 
 .sec1_1 .portfolio_list .list_tit {
-  display: inline-block;
-  font-size: 3rem;
+  display: block;
+  font-size: 1.6vw;
+  line-height: 12vh;
+  margin-top: 0.6vh;
   font-weight: 400;
 }
 
@@ -1432,32 +1439,219 @@ html {
   background: #1941b8;
 }
 
+@media (max-width: 1520px) {
+  .sec1_1 .airplane_img_wrap {
+    width: 87%;
+    height: 58%;
+    position: relative;
+  }
+}
+
 @media (max-width: 1440px) {
-  html {
-    font-size: 50.5%;
+  .sec1_1 .airplane_img_wrap {
+    width: 87%;
+    height: 55%;
+    position: relative;
   }
 }
 
-@media (max-width: 1220px) {
-  html {
-    font-size: 45.5%;
+@media (max-width: 1225px) {
+  .sec1_1 .airplane_img_wrap {
+    width: 87%;
+    height: 51%;
+    position: relative;
   }
 }
 
-@media (max-width: 1024px) {
-  html {
-    font-size: 40.5%;
+@media (max-width: 1025px) {
+  .sec1_1 .airplane_img_wrap {
+    width: 87%;
+    height: 47%;
+    position: relative;
   }
 }
 
-@media (max-width: 900px) {
-  html {
-    font-size: 35.5%;
+@media (max-width: 913px){
+  /*mobile_nav*/
+  #mobile_nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-bottom: #1941b8 1px solid;
+    z-index: 9999;
+  } 
+
+  #mobile_nav .logo_cont {
+    display: flex;
+    align-items: center;
+    padding-left: 2.5vw;
+  }
+
+  #mobile_nav .logo_icon {
+    width: 20px;
+    height: 20px;
+    background-image: url(../svg/logo_icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+  #mobile_nav .logo_txt{
+  font-family: "Poppins", sans-serif;
+  padding-left: 2.5vw;
+  font-size: 5vw;
+}
+
+  #mobile_nav .menu a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    background: url(../svg/menu_icon.svg) no-repeat;
+    background-position: center;
+    margin-right: 2.5vw;
+  }
+
+  #nav{
+    display: none;
+  }
+
+  .main_container {
+    padding: 2.5vw;
+  }
+
+  /*section1*/
+  .section1 .v-line{
+    display: none;
+  }
+
+  .sec1_1 {
+    flex-direction: column;
+  }
+
+  .sec1_1 .header {
+    order: 2;
+    width: 100vw;
+    padding-bottom: 3vw;
+  }
+
+  .sec1_1 .title strong {
+    font-size: 12vw;
+    line-height: 0.9;
+  }
+
+  .sec1_1 .title .arrow_icon {
+    width: 45vw;
+    height: 9vw;
+    margin-left: 0.4vw;
+    background-size: 100%;
+  }
+
+  .sec1_1 .title span {
+    font-size: 12vw;
+    line-height: 0.9;  
+    -webkit-text-stroke: 0.28vw #1941b8;
+  }
+
+  .sec1_1 .email {
+    display: none;
+  }
+  
+  .sec1_1 .portfolio_list{
+    display: none;
+  }
+
+  .sec1_1 .img_wrap {
+    order: 1;
+    width: 100vw;
+    padding-right: 5vw;
+    bottom: 6vh;
+    background-color: #222;
+  }
+
+  .sec1_1 .airplane_img_wrap .airplane_img {
+    background-size: 50%;
+  }
+
+  .sec1_1 .airplane_img_wrap .star_bg {
+    width: 60%;
+    left: 27%;
+    bottom: 1%;
+    background-size: 78%;
+  }
+
+  .sec1_1 .airplane_img_wrap .clouds_img {
+    width: 50%;
+    left: 25%;
+    animation: movebg 20s linear infinite;
   }
 }
 
-@media (max-width: 600px) {
-  html {
-    font-size: 30.5%;
+@media (max-width: 821px){
+  .sec1_1 .airplane_img_wrap {
+    width: 87%;
+    height: 77%;
+    position: relative;
+    background-color: #222;
+  }
+}
+
+@media (max-width: 600px){
+  .sec1_1 .airplane_img_wrap {
+    width: 87%;
+    height: 69%;
+    position: relative;
+    background-color: #222;
+  }
+}
+
+@media (max-width: 415px){
+  .sec1_1 .header {
+    padding-bottom: 6vw;
+  }
+
+  .sec1_1 .airplane_img_wrap {
+    width: 87%;
+    height: 63%;
+    position: relative;
+  }
+
+  .sec1_1 .airplane_img_wrap .airplane_img {
+    background-size: 75%;
+  }
+
+  .sec1_1 .airplane_img_wrap .star_bg {
+    width: 75%;
+    left: 17%;
+    bottom: 3%;
+    background-size: 90%;
+  }
+
+  .sec1_1 .airplane_img_wrap .clouds_img {
+    width: 70%;
+    left: 15%;
+    animation: movebg 20s linear infinite;
+  }
+}
+
+@media (max-width: 391px){
+  .sec1_1 .airplane_img_wrap {
+    width: 87%;
+    height: 62%;
+    position: relative;
+  }
+}
+
+@media (max-width: 376px){
+  .sec1_1 .airplane_img_wrap {
+    width: 87%;
+    height: 81%;
+    position: relative;
   }
 }
