@@ -44,6 +44,45 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Fulbo";
+  src: url(../font/Fulbo-Argenta-1.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hanson-bold";
+  src: url(../font/Hanson-Bold.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kabal-Regular";
+  src: url(../font/Kabal-Regular.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ElanorFreePersonalUse";
+  src: url(../font/ElanorFreePersonalUse-ExBdIt.otf);
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ElanorFreePersonalUse";
+  src: url(../font/ElanorFreePersonalUse-ExtLt.otf);
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksilver";
+  src: url(../font/Quicksilver.otf);
+  font-weight: 200;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -132,7 +171,6 @@ button {
   color: #fff;
   -webkit-text-stroke: 2.5px #1941b8;
 }
-
 
 .right_cont_desc p {
   font-family: "Noto Sans KR", sans-serif;
