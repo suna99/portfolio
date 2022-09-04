@@ -8,15 +8,17 @@
   <title>Portfolio</title>
 
   <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/animation.css">
   <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 
   <!-- WebFonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Poppins:wght@300;400;500;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;700;900&family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
   <link href="./assets/svg/logo_icon.svg" rel="shortcut icon" type="image/x-icon">
 
@@ -26,18 +28,7 @@
 
 <body>
   <div class="scroll">1000</div>
-  <nav id="mobile_nav" class="mobile_nav">
-    <div class="logo_cont">
-      <div class="logo_icon"></div>
-      <strong class="logo_txt">CHOISUNA - PORTFOLIO</strong>
-    </div>
-    <div class="menu">
-      <a href="#">
-      </a>
-    </div>
-  </nav>
-  <!-- //mobile_nav -->
-
+  
   <nav id="nav" class="nav" data-7600="transform: translatey(-150%);" data-8700="transform: translatey(0%);">
     <div class="logo_cont">
       <div class="logo_icon"></div>
@@ -51,20 +42,44 @@
   </nav>
   <!-- //desktop_nav -->
 
-  <main id="main">
-    <div class="cover" 
-      data-100="transform: scale(1);" 
-      data-1000="transform: scale(1);"
-      data-2000="transform: scale(3);">
+  <nav id="mobile_nav" class="mobile_nav">
+    <div class="logo_cont">
+      <div class="logo_icon"></div>
+      <strong class="logo_txt">CHOISUNA - PORTFOLIO</strong>
+    </div>
+    <div class="menu">
+      <a href="#">
+      </a>
+    </div>
+  </nav>
+  <!-- //mobile_nav -->
+
+  <div class="cover section" 
+    data-100="transform: scale(1)" 
+    data-1000="transform: scale(1)"
+    data-2800="transform: scale(3)">
+
+      <div class="text_wrap gothic_200"
+      data-0="opacity: 1"
+      data-1000="opacity: 1"
+      data-2000="opacity: 0"
+      >
+        <span>안녕하세요.</span>
+        <span>어제보다 오늘 더 발전하는</span>
+        <span>개발자가 되겠습니다.</span>
+        
+      </div>
+      <!-- //text_wrap -->
+
       <div class="cloud_wrap">
         <div class="cloud_left" 
-          data-0="left: 0%; opacity: 1;" 
+          data-0="left: 0%; opacity: 1;"
           data-1000="left: -60%; opacity: 1;"
           data-2000="left: -230%; opacity: 0;">
         </div>
 
         <div class="cloud_right" 
-          data-0="right: -2%; opacity: 1;" 
+          data-0="right: -2%; opacity: 1;"
           data-1000="right: -60%; opacity: 1;"
           data-2000="right: -230%; opacity: 0;">
         </div>
@@ -80,145 +95,140 @@
           data-2300="right: -40%; opacity: 0;">
         </div>
       </div>
-    </div>
+      <!-- //cloud_wrap -->
+  </div>
+  <!-- //cover -->
 
-    <!-- section1 -->
-    <!--  1. header
-          2. about me img-->
-    <section id="section1" class="section1">
-      <div class="pin-wrap">
-        <div class="sec1_1 main_container">
-          <div class="header">
-            <div class="header_wrap">
-              <div class="title">
-                <strong 
-                  data-3500="transform:translatex(-100%)" 
-                  data-4500="transform:translatex(0%)">FRONTEND</strong>
-                <div class="text_wrap" 
-                  data-3700="transform:translatex(-150%)" 
-                  data-4700="transform:translatex(0%)">
-                  <strong>DEV</strong>
-                  <div class="arrow_icon"></div>
-                </div>
-                <span 
-                  data-3900="transform:translatex(-200%)" 
-                  data-4900="transform:translatex(0%)"
-                  >PORTFOLIO</span>
-              </div>
-              <div class="email">
-                <span class="name" 
-                  data-5000="transform:translatey(150%)" 
-                  data-5300="transform:translatey(0%)">CHOI SUN
-                  A</span>
-                <address 
-                  data-5000="transform:translatey(200%)" 
-                  data-5500="transform:translatey(0%)">
-                  <a href="mailto:choisuna0615@gmail.com">choisuna0615@gmail.com</a></address>
-              </div>
-            </div>
+  <!-- header -->
+  <header id="header">
+    <div class="header section main_container">
+      <section class="header_title_wrap">
+        <div class="title Hanson-bold">
+          <strong 
+            data-3500="transform:translatex(-100%)" 
+            data-4500="transform:translatex(0%)">FRONTEND</strong>
+          <div class="middle_text_wrap" data-3700="transform:translatex(-150%)" data-4700="transform:translatex(0%)">
+            <strong>DEV</strong>
+            <div class="arrow_icon"></div>
           </div>
-
-          <div class="v-line"></div>
-
-          <div class="img_wrap" >
-            <div class="airplane_img_wrap"
-              data-2800="transform:scale(15) translateY(15%)"
-              data-3800="transform:scale(2) translateY(5%)"
-              data-4000="transform:scale(1) translateY(0%)"
-            >
-              <div class="airplane_img"></div>
-              <div class="clouds_img"></div>
-              <div class="star_bg"></div>
-            </div>
-          </div>
-
-          <div class="v-line"></div>
-
-          <div class="portfolio_list">
-            <ul data-5500="transform:translatex(-150%);" data-6000="transform:translatex(0%);">
-              <li>
-                <a href="#section2" class="flip-btn">
-                  <div class="front">
-                    <span class="list_num">01</span>
-                    <strong class="list_tit">ABOUT ME</strong>
-                  </div>
-                  <div class="back">
-                    <span class="list_num">01</span>
-                    <strong class="list_tit">ABOUT ME</strong>
-                  </div>
-                </a>
-                <div class="h-line"></div>
-              </li>
-              <li>
-                <a href="#section4" class="flip-btn">
-                  <div class="front">
-                    <span class="list_num">02</span>
-                    <strong class="list_tit">SKILLS</strong>
-                  </div>
-                  <div class="back">
-                    <span class="list_num">02</span>
-                    <strong class="list_tit">SKILLS</strong>
-                  </div>
-                </a>
-                <div class="h-line"></div>
-              </li>
-              <li>
-                <a href="#section5" class="flip-btn">
-                  <div class="front">
-                    <span class="list_num">03</span>
-                    <strong class="list_tit">JAVASCRIPT</strong>
-                  </div>
-                  <div class="back">
-                    <span class="list_num">03</span>
-                    <strong class="list_tit">JAVASCRIPT</strong>
-                  </div>
-                </a>
-                <div class="h-line"></div>
-              </li>
-              <li>
-                <a href="#section6" class="flip-btn">
-                  <div class="front">
-                    <span class="list_num">04</span>
-                    <strong class="list_tit">SITE WORKS</strong>
-                  </div>
-                  <div class="back">
-                    <span class="list_num">04</span>
-                    <strong class="list_tit">SITE WORKS</strong>
-                  </div>
-                </a>
-                <div class="h-line"></div>
-              </li>
-              <li>
-                <a href="#section7" class="flip-btn">
-                  <div class="front">
-                    <span class="list_num">05</span>
-                    <strong class="list_tit">FRONT-END</strong>
-                  </div>
-                  <div class="back">
-                    <span class="list_num">05</span>
-                    <strong class="list_tit">FRONT-END</strong>
-                  </div>
-                </a>
-                <div class="h-line"></div>
-              </li>
-              <li>
-                <a href="#section8" class="flip-btn">
-                  <div class="front">
-                    <span class="list_num">06</span>
-                    <strong class="list_tit">THANK YOU</strong>
-                  </div>
-                  <div class="back">
-                    <span class="list_num">06</span>
-                    <strong class="list_tit">THANK YOU</strong>
-                  </div>
-                </a>
-                <div class="h-line"></div>
-              </li>
-            </ul>
-          </div>
+          <span data-3900="transform:translatex(-200%)" data-4900="transform:translatex(0%)">PORTFOLIO</span>
         </div>
+        <div class="email">
+          <span class="name" 
+            data-5000="transform:translatey(350%)" 
+            data-5300="transform:translatey(0%)">CHOI SUN
+            A</span>
+          <address data-5000="transform:translatey(350%)" data-5500="transform:translatey(0%)">
+            <a href="mailto:choisuna0615@gmail.com">choisuna0615@gmail.com</a>
+          </address>
+        </div>
+      </section>
 
-        <div class="sec1_2" data-6400="transform: translatex(100%); background: none;"
+      <div class="v-line"></div>
+
+      <section class="img_wrap">
+          <div class="airplane_img_wrap" 
+          data-2400="transform:scale(15) translateY(15%)"
+          data-3800="transform:scale(2) translateY(5%)" 
+          data-4000="transform:scale(1) translateY(0%)">
+          <div class="airplane_img"></div>
+          <div class="clouds_img"></div>
+          <div class="star_bg"></div>
+        </div>
+      </section>
+
+      <div class="v-line"></div>
+
+      <section class="portfolio_list">
+        <ul data-5500="transform:translatex(-150%);" data-6000="transform:translatex(0%);">
+          <li>
+            <a href="#section2" class="flip-btn">
+              <div class="front">
+                <span class="list_num">01</span>
+                <strong class="list_tit">ABOUT ME</strong>
+              </div>
+              <div class="back">
+                <span class="list_num">01</span>
+                <strong class="list_tit">ABOUT ME</strong>
+              </div>
+            </a>
+            <div class="h-line"></div>
+          </li>
+          <li>
+            <a href="#section4" class="flip-btn">
+              <div class="front">
+                <span class="list_num">02</span>
+                <strong class="list_tit">SKILLS</strong>
+              </div>
+              <div class="back">
+                <span class="list_num">02</span>
+                <strong class="list_tit">SKILLS</strong>
+              </div>
+            </a>
+            <div class="h-line"></div>
+          </li>
+          <li>
+            <a href="#section5" class="flip-btn">
+              <div class="front">
+                <span class="list_num">03</span>
+                <strong class="list_tit">JAVASCRIPT</strong>
+              </div>
+              <div class="back">
+                <span class="list_num">03</span>
+                <strong class="list_tit">JAVASCRIPT</strong>
+              </div>
+            </a>
+            <div class="h-line"></div>
+          </li>
+          <li>
+            <a href="#section6" class="flip-btn">
+              <div class="front">
+                <span class="list_num">04</span>
+                <strong class="list_tit">SITE WORKS</strong>
+              </div>
+              <div class="back">
+                <span class="list_num">04</span>
+                <strong class="list_tit">SITE WORKS</strong>
+              </div>
+            </a>
+            <div class="h-line"></div>
+          </li>
+          <li>
+            <a href="#section7" class="flip-btn">
+              <div class="front">
+                <span class="list_num">05</span>
+                <strong class="list_tit">FRONT-END</strong>
+              </div>
+              <div class="back">
+                <span class="list_num">05</span>
+                <strong class="list_tit">FRONT-END</strong>
+              </div>
+            </a>
+            <div class="h-line"></div>
+          </li>
+          <li>
+            <a href="#section8" class="flip-btn">
+              <div class="front">
+                <span class="list_num">06</span>
+                <strong class="list_tit">THANK YOU</strong>
+              </div>
+              <div class="back">
+                <span class="list_num">06</span>
+                <strong class="list_tit">THANK YOU</strong>
+              </div>
+            </a>
+            <div class="h-line"></div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- section1 -->
+    <!--  about me img-->
+    <section id="section1" class="section1">
+      <div class="sec1 section" data-6400="transform: translatex(100%); background: none;"
           data-7000="transform: translatex(0%); background: none;"
           data-7500="transform: translatex(0%); background: #fff;">
           <div class="img_wrap">
@@ -229,13 +239,12 @@
               data-8000="width: 100%; height: 100%; object-fit: cover; padding-top: 0px; padding-left: 0px; padding-right: 0px; padding-bottom: 0px;"
               data-8700="width: 65%; height: 100%; object-fit: cover; padding-top: 120px; padding-left: 34px; padding-right: 34px; padding-bottom: 34px;">
           </div>
-        </div>
       </div>
     </section>
     <!-- //section1 -->
 
     <!-- section2 sub -->
-    <!--   about me sub -->
+    <!--  about me sub txt -->
     <section id="section2" class="section2 sub">
       <div class="sec2">
         <div class="reveal">
@@ -549,17 +558,13 @@
       <!-- sec5_2 -->
       <div class="sec5_2">
         <div class="sec5_2_wrap">
-          <div class="sec5_2_cont_title" 
-            data-20000="transform: translatey(-250%);"
+          <div class="sec5_2_cont_title" data-20000="transform: translatey(-250%);"
             data-21000="transform: translatey(0%);">
             <strong>JAVASCRIPT</strong>
           </div>
-          <div class="sec5_2_cont_wrap" 
-            data-18000="transform: translatex(250%);"
-            data-22000="transform: translatex(0%);" 
-            data-22500="transform: translatex(0%);"
-            data-23500="transform: translatex(-33.5%);" 
-            data-24000="transform: translatex(-33.5%);"
+          <div class="sec5_2_cont_wrap" data-18000="transform: translatex(250%);"
+            data-22000="transform: translatex(0%);" data-22500="transform: translatex(0%);"
+            data-23500="transform: translatex(-33.5%);" data-24000="transform: translatex(-33.5%);"
             data-25000="transform: translatex(-66.8%);">
             <div class="cont_1 sec5_2_cont">
               <div class="sec5_2_text_wrap">
@@ -667,8 +672,7 @@
       <!-- sec6_2 -->
       <div class="sec6_2">
         <div class="sec6_2_wrap">
-          <div class="cont_1 sec6_2_cont" 
-            data-27000="transform: translatex(250%);"
+          <div class="cont_1 sec6_2_cont" data-27000="transform: translatex(250%);"
             data-29000="transform: translatex(0%);">
             <div class="sec6_2_cont_title">
               <strong>WED STANDARD</strong>
@@ -815,8 +819,7 @@
 
     <!-- //section8 -->
     <!--   thanks -->
-    <section id="section8" class="section8" 
-    data-37500="transform: translatey(200%);"
+    <section id="section8" class="section8" data-37500="transform: translatey(200%);"
       data-38500="transform: translatey(0%);>">
       <div class="sec8">
         <div class="sec8_wrap">

@@ -1,4 +1,4 @@
-const section1 = document.querySelector("#section1");
+//const section1 = document.querySelector("#section1");
 const section2 = document.querySelector("#section2");
 const section3 = document.querySelector("#section3");
 const section4 = document.querySelector("#section4");
@@ -6,8 +6,6 @@ const section5 = document.querySelector("#section5");
 const section6 = document.querySelector("#section6");
 const section7 = document.querySelector("#section7");
 const section8 = document.querySelector("#section8");
-
-const list_btn = document.querySelector("a.flip-btn");
 
 //버튼 클릭
 document.querySelectorAll(".portfolio_list ul li a").forEach(li => {
@@ -36,11 +34,11 @@ function scroll() {
   }
 
   if (scrollTop < 8100 && scrollTop > 2600) {
-    document.querySelector(".sec1_1").style.display = 'flex';
-    document.querySelector(".sec1_2").style.zIndex = '9001';
+    document.querySelector(".header").style.display = 'flex';
+    document.querySelector(".sec1").style.zIndex = '9001';
   } else {
-    document.querySelector(".sec1_1").style.display = 'none';
-    document.querySelector(".sec1_2").style.zIndex = '1000';
+    document.querySelector(".header").style.display = 'none';
+    document.querySelector(".sec1").style.zIndex = '1000';
   }
 
   if (scrollTop < 18800 && scrollTop > 16000) {
@@ -112,4 +110,4 @@ function stars(count, querySelector) {
   }
 }
 stars(50, ".cloud_wrap");
-stars(160, ".star_bg");
+stars(110, ".star_bg");

@@ -1,0 +1,15 @@
+.main_container {
+  padding: 1.5vw;
+}
+
+.container {
+  padding: 3vw 1.8vw 1.8vw 1.8vw;
+}
+
+.section{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,58 @@
+@keyframes movebg {
+  0% {
+    background-position: 0 bottom;
+  }
+  100% {
+    background-position: 1813.17px bottom;
+  }
+}
+
+@keyframes star {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateEarth {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -3776px 0px;
+  }
+}
+
+@keyframes web-animation {
+  0% {
+    background-position: center top;
+  }
+  80% {
+    background-position: center bottom;
+  }
+
+  85% {
+    background-position: center bottom;
+  }
+
+  100% {
+    background-position: center top;
+  }
+}
+
+@keyframes animationCircleTxt {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
