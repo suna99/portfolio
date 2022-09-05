@@ -521,12 +521,16 @@ font-size: 5vw;
   left: 31.5%;
 }
 
-.sub_desc{
+.section2 .sub_desc_wrap{
   overflow: hidden;
 }
 
-.section2 .sub_desc p, 
-.section2 .sub_desc span {
+.section2 .sub_desc_wrap:first-child p{
+  margin-bottom: 3%;
+}
+
+.section2 .sub_desc_wrap p, 
+.section2 .sub_desc_wrap span {
   font-family: "Gothic A1", sans-serif;
   font-weight: 200;
   font-size: 1.3vw;
@@ -534,7 +538,7 @@ font-size: 5vw;
   color: #fff;
 }
 
-.section2 .sub_desc .text_line{
+.section2 .sub_desc_wrap .text_line{
   position: relative;
   width: 100%;
   height: 100%;

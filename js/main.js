@@ -33,14 +33,14 @@ function scroll() {
     document.querySelector(".cover").style.display = 'none';
   }
 
-  if (scrollTop >= 10200) {
-    document.querySelector('.text_line:first-child').style.animation = "text_line 0.5s ease-in-out 0s forwards";
-    document.querySelector('.text_line:nth-child(2)').style.animation = "text_line 0.5s ease-in-out 1s forwards";
-    document.querySelector('.text_line:last-child').style.animation = "text_line 0.5s ease-in-out 2s forwards";
+  if (scrollTop >= 10500) {
+    document.querySelector('.section2 .sub_desc_wrap:first-child p .text_line:first-child').style.animation = "text_line 0.5s ease-in-out 0s forwards";
+    document.querySelector('.section2 .sub_desc_wrap:first-child p .text_line:last-child').style.animation = "text_line 0.5s ease-in-out 1s forwards";
+    document.querySelector('.section2 .sub_desc_wrap:last-child p .text_line').style.animation = "text_line 0.5s ease-in-out 2s forwards";
   } else {
-    document.querySelector('.text_line:first-child').style.animation = "none";
-    document.querySelector('.text_line:nth-child(2)').style.animation = "none";
-    document.querySelector('.text_line:last-child').style.animation = "none";
+    document.querySelector('.section2 .sub_desc_wrap:first-child p .text_line:first-child').style.animation = "none";
+    document.querySelector('.section2 .sub_desc_wrap:first-child p .text_line:last-child').style.animation = "none";
+    document.querySelector('.section2 .sub_desc_wrap:last-child p .text_line').style.animation = "none";
   }
 
   if (scrollTop < 8100 && scrollTop > 2600) {
