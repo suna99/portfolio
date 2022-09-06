@@ -87,8 +87,8 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 86px;
-  line-height: 86px;
+  height: 10vh;
+  line-height: 10vh;
   background: #1941b8;
   border-bottom: #fff 1px solid;
   display: flex;
@@ -102,11 +102,12 @@
 #nav.change .logo_cont {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 #nav.change .logo_icon {
-  width: 30px;
-  height: 30px;
+  width: 2vw;
+  height: 2vw;
   background-image: url(../svg/logo_icon_white.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -114,14 +115,39 @@
 }
 
 #nav.change .logo_txt {
-  font-family: "Poppins", sans-serif;
-  padding-left: 14px;
+  font-family: "Hanson-bold", sans-serif;
+  font-size: 2vw;
+  margin-left: 0.8vw;
   color: #fff;
 }
 
 #nav.change .menu a {
-  display: inline-block;
+  position: relative;
   color: #fff;
+  font-weight: 300;
+  margin-right: 1vw;
+  transition: all 0.4s ease;
+}
+
+#nav.change .menu a::after{
+  position: absolute;
+  content: "";
+  background: #1941b8;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  transition: all 0.4s ease-in-out;
+}
+
+#nav.change .menu a:hover::after{
+  position: absolute;
+  content: "";
+  background: #1941b8;
+  left: 0;
+  bottom: -1%;
+  width: 100%;
+  height: 1px;
 }
 
 /*mobile_nav*/
@@ -155,9 +181,9 @@
 }
 
 #mobile_nav .logo_txt{
-font-family: "Poppins", sans-serif;
-padding-left: 2.5vw;
-font-size: 5vw;
+  font-family: "Hanson-bold", sans-serif;
+  padding-left: 2.5vw;
+  font-size: 4vw;
 }
 
 #mobile_nav .menu a{
@@ -247,6 +273,14 @@ font-size: 5vw;
   background-position: left bottom;
   background-size: contain;
   z-index: 2;
+}
+
+/* section */
+.section5,
+.section6,
+.section7,
+.section8{
+  display: none;
 }
 
 /* header */
@@ -461,6 +495,12 @@ font-size: 5vw;
   z-index: 9001;
 }
 
+.arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .sec1 .sec1_img_wrap .img {
   position: absolute;
   top: 50%;
@@ -556,7 +596,7 @@ font-size: 5vw;
   z-index: 3000;
 }
 
-.section3 .pin-wrap {
+.section3 .sec3{
   display: flex;
   flex-wrap: nowrap;
 }
@@ -568,15 +608,52 @@ font-size: 5vw;
   width: 260vw;
   background: #1941b8;
   color: #fff;
+  position: relative;
 }
 
-.sec3_1 .journey_icon svg {
-  width: auto;
-  height: 30%;
-  top: 15%;
+.airplane_img{
+  position: fixed;
+  top: 0;
   left: 0;
+  width: 100vw;
+  height: 50vh;
+  z-index: 3001;
+}
+
+.airplane_img_wrap{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+}
+
+.airplane_img_wrap .airplane_line{
+  height: 100%;
+  width: 70%;
+  overflow: hidden;
+  position: relative;
+}
+
+.airplane_img_wrap .wave-container{ 
   position: absolute;
-  padding-left: 0;
+  width: 100%;
+  top: 55%;
+  left: 0;
+}
+
+.airplane_img_wrap .airplane_path{
+  width: 20%;
+  height: 100%;
+  right: 10%;
+  bottom: 0;
+  background: url(../svg/airplane_white_line.svg)no-repeat;
+  background-position: left 60%;
+  background-size: 60%;
+  transform-origin : 50% 10%;
+  animation: airplane-animation 1s linear infinite alternate;
 }
 
 .sec3_1 .text_wrap {
@@ -584,28 +661,30 @@ font-size: 5vw;
   height: 100vh;
   display: flex;
   flex-wrap: nowrap;
-  font-size: 400px;
-  align-items: end;
-  line-height: 0.77;
-  padding-left: 120px;
+  align-items: center;
+  padding-left: 5vw;
+  padding-top: 10vh;
 }
 
-.sec3_1 .text_wrap strong {
-  width: auto;
-  color: #fff;
+.sec3_1 .text_wrap strong,
+.sec3_1 .text_wrap span{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  color: #E4E9F8;
+  font-size: 25VW;
 }
 
 .sec3_1 .text_wrap span {
   color: rgba(255, 255, 255, 0);
-  -webkit-text-stroke: 5px #fff;
+  -webkit-text-stroke: 0.2vw #D1D9F1;
 }
 
 .sec3_1 .text_wrap span:nth-child(5) {
-  margin-left: 100px;
+  margin-left: 6vw;
 }
 
 .sec3_1 .text_wrap span:nth-child(7) {
-  margin: 0 100px;
+  margin: 0 6vw;
 }
 
 /* sec3_2 */
@@ -625,7 +704,7 @@ font-size: 5vw;
   background: #1941b8;
 }
 
-.sec3_2_title_contain {
+.sec3_2_header_contain {
   width: 100%;
   align-items: center;
   margin-bottom: 10px;
@@ -638,18 +717,20 @@ font-size: 5vw;
   flex-wrap: nowrap;
   justify-content: start;
   align-items: center;
+  overflow: hidden;
 }
 
 .sec3_2 .sec3_2_title {
   font-family: "Poppins", sans-serif;
-  font-size: 80px;
+  font-size: 3.5vw;
   color: #fff;
   font-weight: 700;
+  margin-right: 1vw;
 }
 
 .sec3_2 .thin_arrow_icon {
-  width: 380px;
-  height: 60px;
+  width: 13vw;
+  height: 3.5vw;
   background: url(../svg/thin_arrow_icon.svg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -663,9 +744,9 @@ font-size: 5vw;
 }
 
 .sec3_2 .sec3_2_desc p {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
-  font-size: 28px;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 300;
+  font-size: 1.5vw;
   color: #fff;
   line-height: 1.5;
 }
@@ -674,17 +755,29 @@ font-size: 5vw;
   position: absolute;
   height: inherit;
   top: 0;
-  left: 58.3%;
+  right: 41%;
   border-left: 1px solid #fff;
 }
 
 /* section4 */
-.section4.sub {
+.section4{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.sec4{
   position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4001;
+}
+
+.sub_contain_wrap {
   right: 0;
   top: -83%;
   width: 40vw;
-  height: 140vh;
+  height: 160vh;
   padding-top: 85px;
   margin-left: auto;
   color: #fff;
@@ -697,21 +790,32 @@ font-size: 5vw;
 }
 
 .section4 .sub_title strong {
-  font-weight: 700;
-  font-size: 54px;
+  font-weight: 500;
+  font-size: 2.2vw;
   margin-bottom: 10px;
-}
-
-.section4 .sub_title strong,
-.section4 .sub_title span {
+  position: relative;
+  padding-left: 1.5vw;
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
+.section4 .sub_title strong::after {
+  content: '';
+  width: 5vw;
+  height: 100%;
+  background-color: #222;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../svg/sec4_rectangle.svg)no-repeat;
+  background-position: left center;
+  background-size: 15%;
+}
+
 .section4 .sub_desc span {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 400;
-  font-size: 22px;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 100;
+  font-size: 1.2vw;
   line-height: 1.5;
   color: #fff;
   margin-bottom: 16px;
@@ -719,9 +823,9 @@ font-size: 5vw;
 }
 
 .section4 .sub_desc span a {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Gothic A1", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1vw;
   line-height: 1.5;
   color: #fff;
   opacity: 0.3;
@@ -750,7 +854,7 @@ font-size: 5vw;
 }
 
 .section4 .h-line {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px dashed #D1D9F1;
 }
 
 /* section5 */
@@ -1261,8 +1365,6 @@ font-size: 5vw;
   animation: animationCircleTxt 25s linear infinite;
 }
 
-
-
 .sec8_wrap .top_wrap .airplane_img {
   position: absolute;
   top: 14.5%;
@@ -1463,10 +1565,20 @@ font-size: 5vw;
   }
 }
 
-/* Mobile */
+/* Mobile
+- mobile_nav
+- cover
+- header
+- section2
+- section3
+*/
 @media screen and (max-width:767px){ 
   /* nav */
   #nav{
+    display: none;
+  }
+
+  #nav.change{
     display: none;
   }
 
@@ -1561,6 +1673,7 @@ font-size: 5vw;
     display: none;
   }
 
+  /* section2 */
   .section2 .sub_contain {
     left: 0;
     margin: 0 auto;
@@ -1584,6 +1697,136 @@ font-size: 5vw;
     font-size: 18px;
     line-height: 1.5;
     color: #fff;
+  }
+
+  /* section3 */
+  .sec3_1.container {
+    padding: 0;
+    height: 100vh;
+    width: 400vw;
+  }
+
+  .sec3_1 .text_wrap strong,
+  .sec3_1 .text_wrap span{
+  font-size: 35VW;
+  }
+
+  .airplane_img_wrap .airplane_line{
+    width: 60%;
+  }
+
+  .airplane_img_wrap .airplane_path{
+    width: 60%;
+  }
+
+  .dot{
+    height: 2px;
+    width: 2px;
+  }
+
+  .sec3_2 .container {
+    justify-content: start;
+    position: relative;
+  }
+
+  .sec3_2_cont{
+    box-sizing:content-box;
+    position: absolute;
+    width: 100vw;
+    height: 34vh;
+    top: 0;
+    left: -40%;
+    padding-left: 2vw;
+    z-index: 4050;
+    border-bottom: 1px solid #fff;
+  }
+
+  .sec3_2_header_contain{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .sec3_2_header_contain_wrap{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+  }
+
+  .sec3_2_title_wrap{
+    margin-top: 0;
+    padding-left: 1vw;
+    width: 100%;
+  }
+
+  .sec3_2 .sec3_2_title {
+    font-size: 10vw;
+    line-height: 10vw;
+    margin-right: 2vw;
+  }
+
+  .sec3_2 .thin_arrow_icon {
+    width: 38vw;
+    height: 13vw;
+  }
+
+  .sec3_2 .sec3_2_desc {
+    width: 90vw;
+    overflow: none;
+    padding-left: 1vw;
+    margin-bottom: 0;
+  }
+
+  .sec3_2 .sec3_2_desc p {
+    font-size: 16px;
+  }
+
+  .sec3_2 .v-line{
+    display: none;
+  }
+
+  /* section4 */
+  .sec4{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 66vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .sub_contain_wrap {
+    width: 100vw;
+  }
+
+  .section4 .sub_contain {
+    padding: 30px 20px;
+    margin-left: auto;
+  }
+
+  .section4 .sub_title strong {
+    font-size: 7vw;
+    margin-bottom: 1vh;
+    padding-left: 3.2vw;
+  }
+
+  .section4 .sub_title strong::after {
+    background-size: 40%;
+  }
+
+  .section4 .sub_desc span {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .section4 .sub_desc span a {
+    font-size: 16px;
   }
 }
 

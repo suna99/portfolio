@@ -57,23 +57,23 @@ function scroll() {
     document.querySelector(".section4").style.zIndex = '4000';
   }
 
-  if (scrollTop < 19999 && scrollTop >= 11000) {
+  if (scrollTop < 30000 && scrollTop >= 13500) {
     document.querySelector("#nav").classList.add("change");
   } else {
     document.querySelector("#nav").classList.remove("change");
   }
 
-  if (scrollTop >= 35500) {
-    document.querySelector("#nav").classList.add("change");
-  } else {
-    document.querySelector("#nav").classList.remove("change");
-  }
+  // if (scrollTop >= 35500) {
+  //   document.querySelector("#nav").classList.add("change");
+  // } else {
+  //   document.querySelector("#nav").classList.remove("change");
+  // }
 
-  if (scrollTop > 17900 && scrollTop < 26000) {
-    document.querySelector(".sec5_1").style.display = 'block';
-  } else {
-    document.querySelector(".sec5_1").style.display = 'none';
-  }
+  // if (scrollTop > 17900 && scrollTop < 26000) {
+  //   document.querySelector(".sec5_1").style.display = 'block';
+  // } else {
+  //   document.querySelector(".sec5_1").style.display = 'none';
+  // }
 
 
   // document.querySelector("body").addEventListener('mousemove', eyeball);

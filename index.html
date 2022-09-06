@@ -8,8 +8,10 @@
   <title>Portfolio</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/fonts.css">
-  <link rel="stylesheet" href="assets/css/animation.css">
+  <link rel="stylesheet" href="assets/font/fonts.css">
+  <link rel="stylesheet" href="assets/animation/animation.css">
+  <link rel="stylesheet" href="assets/animation/dotWave.css">
+  <link rel="stylesheet" href="assets/animation/dotWaveMobile.css">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -18,22 +20,24 @@
   <!-- WebFonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;700;900&family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;700;900&family=Poppins:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
 
   <link href="./assets/svg/logo_icon.svg" rel="shortcut icon" type="image/x-icon">
 
   <!-- fontAwesome -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;700;900&family=Poppins:wght@100;200;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;700;900&family=Poppins:wght@100;200;300;400;500;700;900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div class="scroll">1000</div>
-  
-  <nav id="nav" class="nav" 
-  data-7600="transform: translatey(-150%);" 
-  data-8600="transform: translatey(0%);">
+
+  <nav id="nav" class="nav" data-7600="transform: translatey(-150%);" data-8600="transform: translatey(0%);">
     <div class="logo_cont">
       <div class="logo_icon"></div>
       <strong class="logo_txt">CHOISUNA - PORTFOLIO</strong>
@@ -58,48 +62,34 @@
   </nav>
   <!-- //mobile_nav -->
 
-  <div class="cover section" 
-    data-100="transform: scale(1)" 
-    data-1000="transform: scale(1)"
+  <div class="cover section" data-100="transform: scale(1)" data-1000="transform: scale(1)"
     data-2800="transform: scale(3)">
 
-      <div class="text_wrap gothic_200"
-      data-0="opacity: 1"
-      data-1000="opacity: 1"
-      data-2000="opacity: 0"
-      >
-        <span>안녕하세요.</span>
-        <span>어제보다 오늘 더 발전하는</span>
-        <span>개발자가 되겠습니다.</span>
-        
+    <div class="text_wrap gothic_200" data-0="opacity: 1" data-1000="opacity: 1" data-2000="opacity: 0">
+      <span>안녕하세요.</span>
+      <span>어제보다 오늘 더 발전하는</span>
+      <span>개발자가 되겠습니다.</span>
+
+    </div>
+    <!-- //text_wrap -->
+
+    <div class="cloud_wrap">
+      <div class="cloud_left" data-0="left: 0%; opacity: 1;" data-1000="left: -60%; opacity: 1;"
+        data-2000="left: -230%; opacity: 0;">
       </div>
-      <!-- //text_wrap -->
 
-      <div class="cloud_wrap">
-        <div class="cloud_left" 
-          data-0="left: 0%; opacity: 1;"
-          data-1000="left: -60%; opacity: 1;"
-          data-2000="left: -230%; opacity: 0;">
-        </div>
-
-        <div class="cloud_right" 
-          data-0="right: -2%; opacity: 1;"
-          data-1000="right: -60%; opacity: 1;"
-          data-2000="right: -230%; opacity: 0;">
-        </div>
-
-        <div class="min_cloud_left" 
-          data-100="left: 4%; opacity: 1;" 
-          data-1500="left: -10%; opacity: 1;"
-          data-2300="left: -40%; opacity: 0;">
-        </div>
-        <div class="min_cloud_right" 
-          data-200="right: 4%; opacity: 1;" 
-          data-1600="right: -10%; opacity: 1;"
-          data-2300="right: -40%; opacity: 0;">
-        </div>
+      <div class="cloud_right" data-0="right: -2%; opacity: 1;" data-1000="right: -60%; opacity: 1;"
+        data-2000="right: -230%; opacity: 0;">
       </div>
-      <!-- //cloud_wrap -->
+
+      <div class="min_cloud_left" data-100="left: 4%; opacity: 1;" data-1500="left: -10%; opacity: 1;"
+        data-2300="left: -40%; opacity: 0;">
+      </div>
+      <div class="min_cloud_right" data-200="right: 4%; opacity: 1;" data-1600="right: -10%; opacity: 1;"
+        data-2300="right: -40%; opacity: 0;">
+      </div>
+    </div>
+    <!-- //cloud_wrap -->
   </div>
   <!-- //cover -->
 
@@ -108,9 +98,7 @@
     <div class="header section main_container">
       <section class="header_title_wrap">
         <div class="title Hanson-bold">
-          <strong 
-            data-3500="transform:translatex(-100%)" 
-            data-4500="transform:translatex(0%)">FRONTEND</strong>
+          <strong data-3500="transform:translatex(-100%)" data-4500="transform:translatex(0%)">FRONTEND</strong>
           <div class="middle_text_wrap" data-3700="transform:translatex(-150%)" data-4700="transform:translatex(0%)">
             <strong>DEV</strong>
             <div class="arrow_icon"></div>
@@ -118,9 +106,7 @@
           <span data-3900="transform:translatex(-200%)" data-4900="transform:translatex(0%)">PORTFOLIO</span>
         </div>
         <div class="email">
-          <span class="name" 
-            data-5000="transform:translatey(350%)" 
-            data-5300="transform:translatey(0%)">CHOI SUN
+          <span class="name" data-5000="transform:translatey(350%)" data-5300="transform:translatey(0%)">CHOI SUN
             A</span>
           <address data-5000="transform:translatey(350%)" data-5500="transform:translatey(0%)">
             <a href="mailto: choisuna0615@gmail.com">choisuna0615@gmail.com</a>
@@ -131,10 +117,8 @@
       <div class="v-line"></div>
 
       <section class="img_wrap">
-          <div class="airplane_img_wrap" 
-          data-2400="transform:scale(15) translateY(15%)"
-          data-3800="transform:scale(2) translateY(5%)" 
-          data-4000="transform:scale(1) translateY(0%)">
+        <div class="airplane_img_wrap" data-2400="transform:scale(15) translateY(15%)"
+          data-3800="transform:scale(2) translateY(5%)" data-4000="transform:scale(1) translateY(0%)">
           <div class="airplane_img"></div>
           <div class="clouds_img"></div>
           <div class="star_bg"></div>
@@ -232,20 +216,22 @@
     <!--  about me img-->
     <section id="section1" class="section1">
       <div class="sec1 section" data-6400="transform: translatex(100%); background: none;"
-          data-7000="transform: translatex(0%); background: none;"
-          data-7500="transform: translatex(0%); background: #fff;">
-          <div class="sec1_cont_wrap">
-            <div class="sec1_img_wrap">
-              <div class="img"
-                data-6400="height: 0.09%; filter: grayscale(100%);"
-                data-7000="height: 0.09%; filter: grayscale(100%);"
-                data-7001="height: 0.09%; filter: grayscale(0%);"
-                data-7500="height: 100%; filter: grayscale(0%);"
-                data-8000="height: 100%; filter: grayscale(0%);"
-                data-8700="height: 100%; filter: grayscale(0%);">
+        data-7000="transform: translatex(0%); background: none;"
+        data-7500="transform: translatex(0%); background: #fff;">
+        <div class="sec1_cont_wrap">
+          <div class="arrow">
+            <svg width="1925" height="24" viewBox="0 0 1925 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1923 13.5C1923.83 13.5 1924.5 12.8284 1924.5 12C1924.5 11.1716 1923.83 10.5 1923 10.5V13.5ZM0.939321 10.9393C0.353534 11.5251 0.353534 12.4749 0.939321 13.0607L10.4853 22.6066C11.071 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.1213 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.807612 11.071 0.807612 10.4853 1.3934L0.939321 10.9393ZM1923 10.5L1.99998 10.5V13.5L1923 13.5V10.5Z"
+                fill="#1941B8" />
+            </svg>
+          </div>
+          <div class="sec1_img_wrap">
+            <div class="img" data-7001="width: 100%; height: 0%;" data-7500="width: 100%; height: 100%;"
+              data-8000="width: 100%; height: 100%;" data-8700="width: 100%; height: 100%;">
             </div>
           </div>
-      </div>
+        </div>
     </section>
     <!-- //section1 -->
 
@@ -253,39 +239,24 @@
     <!--  about me sub txt -->
     <section id="section2" class="section2 sub section">
       <div class="sec2">
-        <div class="sub_contain"
-          data-8700="transform: scaleX(0)" 
-          data-9000="transform: scaleX(1)"
-        >
+        <div class="sub_contain" data-8700="transform: scaleX(0)" data-9000="transform: scaleX(1)">
           <div class="sub_title">
-            <strong
-            data-9050="transform: translateY(250%)" 
-            data-9500="transform: translateY(0%)"
-            >ABOUT</strong>
-            <span
-            data-9150="transform: translateY(250%)" 
-            data-9700="transform: translateY(0%)"
-            >ME</span>
+            <strong data-9050="transform: translateY(250%)" data-9500="transform: translateY(0%)">ABOUT</strong>
+            <span data-9150="transform: translateY(250%)" data-9700="transform: translateY(0%)">ME</span>
           </div>
           <div class="sub_desc">
             <div class="sub_desc_wrap">
-              <p
-              data-9750="transform: translateY(-250%)" 
-              data-10500="transform: translateY(0%)"
-              >
+              <p data-9750="transform: translateY(-250%)" data-10500="transform: translateY(0%)">
                 <span class="text_line">UXUI를 전공하여 기획부터 디자인</span>까지 꾸준히 공부하고 경험하면서 점차 개발에도 흥미가 생기기 시작했습니다.
                 2019년도부터 안드로이드를 공부하여 6개의 어플을 출시하였고, <span class="text_line">지금은 프론트엔드 개발자로서 첫발을 내딛으려고 합니다.</span>
             </div>
             <div class="sub_desc_wrap">
-            <p
-            data-9900="transform: translateY(-250%)" 
-            data-12000="transform: translateY(0%)"
-            >
-              최신 UXUI를 반영한 웹&모바일 트렌드에 민감하게 반응하고 뒤처지지 않기 위해
-              스터디 모임과 세미나에 참여하여 핵심 사이트를 벤치마킹하고 업무 시간 외에도 꾸준히
-              부족한 부분과 유행하는 기술들을 공부하여 <span class="text_line">자기 계발에 힘쓰겠습니다.</span>
-            </p>
-          </div>
+              <p data-9900="transform: translateY(-250%)" data-12000="transform: translateY(0%)">
+                최신 UXUI를 반영한 웹&모바일 트렌드에 민감하게 반응하고 뒤처지지 않기 위해
+                스터디 모임과 세미나에 참여하여 핵심 사이트를 벤치마킹하고 업무 시간 외에도 꾸준히
+                부족한 부분과 유행하는 기술들을 공부하여 <span class="text_line">자기 계발에 힘쓰겠습니다.</span>
+              </p>
+            </div>
           </div>
         </div>
         <!-- sub_contain -->
@@ -295,70 +266,380 @@
 
     <!-- section3 -->
     <!--   skills -->
-    <section id="section3" class="section3" 
-      data-13000="transform: translate(0%, 100%);"
-      data-13500="transform: translate(0%, 0%);" 
-      data-13700="transform: translate(0%, 0%);"
-      data-15200="transform: translate(-71.99%, 0%);">
-      <div class="pin-wrap">
-        <div class="sec3_1 container">
-          <div class="journey_icon">
-            <svg width="5613" height="356" viewBox="0 0 5613 356" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="airplane_path"
-                d="M5475.34 67.0704C5462.14 73.3179 5434.5 86.2154 5429.53 87.8252C5423.32 89.8374 5381.5 76.543 5373.73 76.6925C5372.88 86.0775 5390.64 98.8891 5390.41 101.449C5390.17 104.008 5385.51 107.883 5389.78 108.274C5394.05 108.665 5454.51 106.46 5460.8 103.594C5467.09 100.729 5495.81 87.8733 5544.41 64.7936C5593.01 41.7138 5612.97 30.6361 5610.1 24.351C5607.23 18.066 5592.41 20.1496 5581.07 21.6927C5572.01 22.9272 5530.15 41.9784 5510.35 51.3496L5438.27 20.6582L5484.26 73.0496M5506.13 97.4216L5522.5 116.127L5533.07 85.2631"
-                stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-              <path class="line_path"
-                d="M5461 105C5415 153 5156.5 243.122 4995 234.903C4833.5 226.684 4713.5 271 4657 289C4600.5 307 4524.51 314.134 4446.09 279.826C4399.81 259.579 4360.76 186.579 4400.03 143.735C4430.13 110.905 4500.07 122.215 4500.07 171.104C4500.07 200.687 4461.84 223.233 4438.92 234.903C4391.08 259.258 4349.59 256.844 4298.11 249.248C4226.09 238.623 4151.06 224.625 4084.82 194.132C4038.04 172.6 4014.49 132.145 4021.77 82.0121C4025.07 59.3195 4047.5 17.5617 4073.49 8.02063C4112 -6.11575 4150.74 10.9839 4174.66 41.9963C4190.86 62.9952 4176.62 99.9854 4167.11 120.895C4147.56 163.9 4096.39 177.912 4054.62 180.542C4009.43 183.386 3953.85 177.293 3913.62 155.626C3882.1 138.653 3842.66 120.75 3806.59 116.743C3758.5 111.4 3709.27 103.626 3661.06 115.044C3605.21 128.273 3550.91 156.204 3503.08 188.092C3481.1 202.745 3460.88 219.818 3439.28 234.903C3421.16 247.554 3396.63 264.68 3375.48 271.144C3305.82 292.43 3233.52 309.188 3159.92 301.722C3058.05 291.387 2960.86 272.603 2864.33 237.168C2805.11 215.429 2749.31 191.047 2686.9 178.654C2640.74 169.487 2591.55 168.506 2544.77 172.991C2485.69 178.657 2426.14 186.785 2369.04 203.192C2316.81 218.203 2265.23 235.046 2212.76 249.248C2165.92 261.926 2120.59 280.621 2071.76 284.545C1994.63 290.742 1908.96 289.46 1833.74 268.878C1795.61 258.449 1761.97 236.19 1727.85 217.16C1699.4 201.296 1667.69 180.644 1651.02 151.474C1632.06 118.291 1635.57 64.0479 1667.5 42.3842C1681.65 32.7837 1709.35 28.8842 1727.85 47.3842C1759.99 79.5241 1750.02 141.565 1734.45 177.144C1693.78 270.105 1591.88 318.347 1498.89 340.227C1424.43 357.748 1333.1 359.099 1258.79 340.227C1153.18 313.405 1062.18 243.15 970 188.092C535.5 -25 235.288 364.017 2.5 340.227"
-                stroke="white" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10" />
-            </svg>
+    <section id="section3" class="section3">
+      <div class="airplane_img" 
+        data-12000="transform: translateX(-150%); opacity:1;"
+        data-16000="transform: translateX(0%); opacity:1;" 
+        data-16700="transform: translateX(0%); opacity:1;"
+        data-16900="transform: translateX(0%); opacity:0;">
+        <div class="airplane_img_wrap">
+          <div class="airplane_line">
+            <div id="wave-container" class="wave-container">
+              <div class="dot" id="d1"></div>
+              <div class="dot" id="d2"></div>
+              <div class="dot" id="d3"></div>
+              <div class="dot" id="d4"></div>
+              <div class="dot" id="d5"></div>
+              <div class="dot" id="d6"></div>
+              <div class="dot" id="d7"></div>
+              <div class="dot" id="d8"></div>
+              <div class="dot" id="d9"></div>
+              <div class="dot" id="d10"></div>
+              <div class="dot" id="d11"></div>
+              <div class="dot" id="d12"></div>
+              <div class="dot" id="d13"></div>
+              <div class="dot" id="d14"></div>
+              <div class="dot" id="d15"></div>
+              <div class="dot" id="d16"></div>
+              <div class="dot" id="d17"></div>
+              <div class="dot" id="d18"></div>
+              <div class="dot" id="d19"></div>
+              <div class="dot" id="d20"></div>
+              <div class="dot" id="d21"></div>
+              <div class="dot" id="d22"></div>
+              <div class="dot" id="d23"></div>
+              <div class="dot" id="d24"></div>
+              <div class="dot" id="d25"></div>
+              <div class="dot" id="d26"></div>
+              <div class="dot" id="d27"></div>
+              <div class="dot" id="d28"></div>
+              <div class="dot" id="d29"></div>
+              <div class="dot" id="d30"></div>
+              <div class="dot" id="d31"></div>
+              <div class="dot" id="d32"></div>
+              <div class="dot" id="d33"></div>
+              <div class="dot" id="d34"></div>
+              <div class="dot" id="d35"></div>
+              <div class="dot" id="d36"></div>
+              <div class="dot" id="d37"></div>
+              <div class="dot" id="d38"></div>
+              <div class="dot" id="d39"></div>
+              <div class="dot" id="d40"></div>
+              <div class="dot" id="d41"></div>
+              <div class="dot" id="d42"></div>
+              <div class="dot" id="d43"></div>
+              <div class="dot" id="d44"></div>
+              <div class="dot" id="d45"></div>
+              <div class="dot" id="d46"></div>
+              <div class="dot" id="d47"></div>
+              <div class="dot" id="d48"></div>
+              <div class="dot" id="d49"></div>
+              <div class="dot" id="d50"></div>
+              <div class="dot" id="d51"></div>
+              <div class="dot" id="d52"></div>
+              <div class="dot" id="d53"></div>
+              <div class="dot" id="d54"></div>
+              <div class="dot" id="d55"></div>
+              <div class="dot" id="d56"></div>
+              <div class="dot" id="d57"></div>
+              <div class="dot" id="d58"></div>
+              <div class="dot" id="d59"></div>
+              <div class="dot" id="d60"></div>
+              <div class="dot" id="d61"></div>
+              <div class="dot" id="d62"></div>
+              <div class="dot" id="d63"></div>
+              <div class="dot" id="d64"></div>
+              <div class="dot" id="d65"></div>
+              <div class="dot" id="d66"></div>
+              <div class="dot" id="d67"></div>
+              <div class="dot" id="d68"></div>
+              <div class="dot" id="d69"></div>
+              <div class="dot" id="d70"></div>
+              <div class="dot" id="d71"></div>
+              <div class="dot" id="d72"></div>
+              <div class="dot" id="d73"></div>
+              <div class="dot" id="d74"></div>
+              <div class="dot" id="d75"></div>
+              <div class="dot" id="d76"></div>
+              <div class="dot" id="d77"></div>
+              <div class="dot" id="d78"></div>
+              <div class="dot" id="d79"></div>
+              <div class="dot" id="d80"></div>
+              <div class="dot" id="d81"></div>
+              <div class="dot" id="d82"></div>
+              <div class="dot" id="d83"></div>
+              <div class="dot" id="d84"></div>
+              <div class="dot" id="d85"></div>
+              <div class="dot" id="d86"></div>
+              <div class="dot" id="d87"></div>
+              <div class="dot" id="d88"></div>
+              <div class="dot" id="d89"></div>
+              <div class="dot" id="d90"></div>
+              <div class="dot" id="d91"></div>
+              <div class="dot" id="d92"></div>
+              <div class="dot" id="d93"></div>
+              <div class="dot" id="d94"></div>
+              <div class="dot" id="d95"></div>
+              <div class="dot" id="d96"></div>
+              <div class="dot" id="d97"></div>
+              <div class="dot" id="d98"></div>
+              <div class="dot" id="d99"></div>
+              <div class="dot" id="d100"></div>
+              <div class="dot" id="d101"></div>
+              <div class="dot" id="d102"></div>
+              <div class="dot" id="d103"></div>
+              <div class="dot" id="d104"></div>
+              <div class="dot" id="d105"></div>
+              <div class="dot" id="d106"></div>
+              <div class="dot" id="d107"></div>
+              <div class="dot" id="d108"></div>
+              <div class="dot" id="d109"></div>
+              <div class="dot" id="d110"></div>
+              <div class="dot" id="d111"></div>
+              <div class="dot" id="d112"></div>
+              <div class="dot" id="d113"></div>
+              <div class="dot" id="d114"></div>
+              <div class="dot" id="d115"></div>
+              <div class="dot" id="d116"></div>
+              <div class="dot" id="d117"></div>
+              <div class="dot" id="d118"></div>
+              <div class="dot" id="d119"></div>
+              <div class="dot" id="d120"></div>
+              <div class="dot" id="d121"></div>
+              <div class="dot" id="d122"></div>
+              <div class="dot" id="d123"></div>
+              <div class="dot" id="d124"></div>
+              <div class="dot" id="d125"></div>
+              <div class="dot" id="d126"></div>
+              <div class="dot" id="d127"></div>
+              <div class="dot" id="d128"></div>
+              <div class="dot" id="d129"></div>
+              <div class="dot" id="d130"></div>
+              <div class="dot" id="d131"></div>
+              <div class="dot" id="d132"></div>
+              <div class="dot" id="d133"></div>
+              <div class="dot" id="d134"></div>
+              <div class="dot" id="d135"></div>
+              <div class="dot" id="d136"></div>
+              <div class="dot" id="d137"></div>
+              <div class="dot" id="d138"></div>
+              <div class="dot" id="d139"></div>
+              <div class="dot" id="d140"></div>
+              <div class="dot" id="d141"></div>
+              <div class="dot" id="d142"></div>
+              <div class="dot" id="d143"></div>
+              <div class="dot" id="d144"></div>
+              <div class="dot" id="d145"></div>
+              <div class="dot" id="d146"></div>
+              <div class="dot" id="d147"></div>
+              <div class="dot" id="d148"></div>
+              <div class="dot" id="d149"></div>
+              <div class="dot" id="d150"></div>
+            </div>
+            <div id="wave-container2" class="wave-container">
+              <div class="dot" id="d1"></div>
+              <div class="dot" id="d2"></div>
+              <div class="dot" id="d3"></div>
+              <div class="dot" id="d4"></div>
+              <div class="dot" id="d5"></div>
+              <div class="dot" id="d6"></div>
+              <div class="dot" id="d7"></div>
+              <div class="dot" id="d8"></div>
+              <div class="dot" id="d9"></div>
+              <div class="dot" id="d10"></div>
+              <div class="dot" id="d11"></div>
+              <div class="dot" id="d12"></div>
+              <div class="dot" id="d13"></div>
+              <div class="dot" id="d14"></div>
+              <div class="dot" id="d15"></div>
+              <div class="dot" id="d16"></div>
+              <div class="dot" id="d17"></div>
+              <div class="dot" id="d18"></div>
+              <div class="dot" id="d19"></div>
+              <div class="dot" id="d20"></div>
+              <div class="dot" id="d21"></div>
+              <div class="dot" id="d22"></div>
+              <div class="dot" id="d23"></div>
+              <div class="dot" id="d24"></div>
+              <div class="dot" id="d25"></div>
+              <div class="dot" id="d26"></div>
+              <div class="dot" id="d27"></div>
+              <div class="dot" id="d28"></div>
+              <div class="dot" id="d29"></div>
+              <div class="dot" id="d30"></div>
+              <div class="dot" id="d31"></div>
+              <div class="dot" id="d32"></div>
+              <div class="dot" id="d33"></div>
+              <div class="dot" id="d34"></div>
+              <div class="dot" id="d35"></div>
+              <div class="dot" id="d36"></div>
+              <div class="dot" id="d37"></div>
+              <div class="dot" id="d38"></div>
+              <div class="dot" id="d39"></div>
+              <div class="dot" id="d40"></div>
+              <div class="dot" id="d41"></div>
+              <div class="dot" id="d42"></div>
+              <div class="dot" id="d43"></div>
+              <div class="dot" id="d44"></div>
+              <div class="dot" id="d45"></div>
+              <div class="dot" id="d46"></div>
+              <div class="dot" id="d47"></div>
+              <div class="dot" id="d48"></div>
+              <div class="dot" id="d49"></div>
+              <div class="dot" id="d50"></div>
+              <div class="dot" id="d51"></div>
+              <div class="dot" id="d52"></div>
+              <div class="dot" id="d53"></div>
+              <div class="dot" id="d54"></div>
+              <div class="dot" id="d55"></div>
+              <div class="dot" id="d56"></div>
+              <div class="dot" id="d57"></div>
+              <div class="dot" id="d58"></div>
+              <div class="dot" id="d59"></div>
+              <div class="dot" id="d60"></div>
+              <div class="dot" id="d61"></div>
+              <div class="dot" id="d62"></div>
+              <div class="dot" id="d63"></div>
+              <div class="dot" id="d64"></div>
+              <div class="dot" id="d65"></div>
+              <div class="dot" id="d66"></div>
+              <div class="dot" id="d67"></div>
+              <div class="dot" id="d68"></div>
+              <div class="dot" id="d69"></div>
+              <div class="dot" id="d70"></div>
+              <div class="dot" id="d71"></div>
+              <div class="dot" id="d72"></div>
+              <div class="dot" id="d73"></div>
+              <div class="dot" id="d74"></div>
+              <div class="dot" id="d75"></div>
+              <div class="dot" id="d76"></div>
+              <div class="dot" id="d77"></div>
+              <div class="dot" id="d78"></div>
+              <div class="dot" id="d79"></div>
+              <div class="dot" id="d80"></div>
+              <div class="dot" id="d81"></div>
+              <div class="dot" id="d82"></div>
+              <div class="dot" id="d83"></div>
+              <div class="dot" id="d84"></div>
+              <div class="dot" id="d85"></div>
+              <div class="dot" id="d86"></div>
+              <div class="dot" id="d87"></div>
+              <div class="dot" id="d88"></div>
+              <div class="dot" id="d89"></div>
+              <div class="dot" id="d90"></div>
+              <div class="dot" id="d91"></div>
+              <div class="dot" id="d92"></div>
+              <div class="dot" id="d93"></div>
+              <div class="dot" id="d94"></div>
+              <div class="dot" id="d95"></div>
+              <div class="dot" id="d96"></div>
+              <div class="dot" id="d97"></div>
+              <div class="dot" id="d98"></div>
+              <div class="dot" id="d99"></div>
+              <div class="dot" id="d100"></div>
+              <div class="dot" id="d101"></div>
+              <div class="dot" id="d102"></div>
+              <div class="dot" id="d103"></div>
+              <div class="dot" id="d104"></div>
+              <div class="dot" id="d105"></div>
+              <div class="dot" id="d106"></div>
+              <div class="dot" id="d107"></div>
+              <div class="dot" id="d108"></div>
+              <div class="dot" id="d109"></div>
+              <div class="dot" id="d110"></div>
+              <div class="dot" id="d111"></div>
+              <div class="dot" id="d112"></div>
+              <div class="dot" id="d113"></div>
+              <div class="dot" id="d114"></div>
+              <div class="dot" id="d115"></div>
+              <div class="dot" id="d116"></div>
+              <div class="dot" id="d117"></div>
+              <div class="dot" id="d118"></div>
+              <div class="dot" id="d119"></div>
+              <div class="dot" id="d120"></div>
+              <div class="dot" id="d121"></div>
+              <div class="dot" id="d122"></div>
+              <div class="dot" id="d123"></div>
+              <div class="dot" id="d124"></div>
+              <div class="dot" id="d125"></div>
+              <div class="dot" id="d126"></div>
+              <div class="dot" id="d127"></div>
+              <div class="dot" id="d128"></div>
+              <div class="dot" id="d129"></div>
+              <div class="dot" id="d130"></div>
+              <div class="dot" id="d131"></div>
+              <div class="dot" id="d132"></div>
+              <div class="dot" id="d133"></div>
+              <div class="dot" id="d134"></div>
+              <div class="dot" id="d135"></div>
+              <div class="dot" id="d136"></div>
+              <div class="dot" id="d137"></div>
+              <div class="dot" id="d138"></div>
+              <div class="dot" id="d139"></div>
+              <div class="dot" id="d140"></div>
+              <div class="dot" id="d141"></div>
+              <div class="dot" id="d142"></div>
+              <div class="dot" id="d143"></div>
+              <div class="dot" id="d144"></div>
+              <div class="dot" id="d145"></div>
+              <div class="dot" id="d146"></div>
+              <div class="dot" id="d147"></div>
+              <div class="dot" id="d148"></div>
+              <div class="dot" id="d149"></div>
+              <div class="dot" id="d150"></div>
+            </div>
           </div>
+          <div class="airplane_path"></div>
+        </div>
+      </div>
+      <div class="sec3"
+        data-13000="transform: translate(0%, 100%);" 
+        data-13500="transform: translate(0%, 0%);"
+        data-14500="transform: translate(0%, 0%);" 
+        data-17500="transform: translate(-71.99%, 0%);">
+        <div class="sec3_1 container">
           <div class="text_wrap">
-            <strong data-11200="transform: translateY(150%) rotate(45deg);"
-              data-11400="transform: translateY(0%) rotate(0deg);"> L </strong>
-            <strong data-11400="transform: translateY(150%) rotate(45deg);"
-              data-11600="transform: translateY(0%) rotate(0deg);">I</strong>
-            <strong data-11600="transform: translateY(150%) rotate(45deg);"
-              data-11800="transform: translateY(0%) rotate(0deg);">F</strong>
-            <strong data-12000="transform: translateY(150%) rotate(45deg);"
-              data-12200="transform: translateY(0%) rotate(0deg);">E</strong>
-            <span data-12200="transform: translateY(150%) rotate(45deg);"
-              data-12400="transform: translateY(0%) rotate(0deg);">I</span>
-            <span data-12400="transform: translateY(150%) rotate(45deg);"
-              data-12600="transform: translateY(0%) rotate(0deg);">S</span>
-            <span data-12600="transform: translateY(150%) rotate(45deg);"
-              data-12800="transform: translateY(0%) rotate(0deg);">A</span>
-            <strong data-12800="transform: translateY(150%) rotate(45deg);"
-              data-13000="transform: translateY(0%) rotate(0deg);">J</strong>
-            <strong data-13000="transform: translateY(150%) rotate(45deg);"
-              data-13200="transform: translateY(0%) rotate(0deg);">O</strong>
-            <strong data-13200="transform: translateY(150%) rotate(45deg);"
-              data-13400="transform: translateY(0%) rotate(0deg);">U</strong>
-            <strong data-13400="transform: translateY(150%) rotate(45deg);"
-              data-13600="transform: translateY(0%) rotate(0deg);">R</strong>
-            <strong data-13600="transform: translateY(150%) rotate(45deg);"
-              data-13800="transform: translateY(0%) rotate(0deg);">N</strong>
-            <strong data-14000="transform: translateY(150%) rotate(45deg);"
-              data-14200="transform: translateY(0%) rotate(0deg);">E</strong>
-            <strong data-14200="transform: translateY(150%) rotate(45deg);"
-              data-14400="transform: translateY(0%) rotate(0deg);">Y</strong>
+            <strong data-13500="transform: translateY(150%) rotate(45deg);"
+              data-13700="transform: translateY(0%) rotate(0deg);"> L </strong>
+            <strong data-13700="transform: translateY(150%) rotate(45deg);"
+              data-13900="transform: translateY(0%) rotate(0deg);">I</strong>
+            <strong data-13900="transform: translateY(150%) rotate(45deg);"
+              data-14100="transform: translateY(0%) rotate(0deg);">F</strong>
+            <strong data-14100="transform: translateY(150%) rotate(45deg);"
+              data-14300="transform: translateY(0%) rotate(0deg);">E</strong>
+            <span data-14300="transform: translateY(150%) rotate(45deg);"
+              data-14500="transform: translateY(0%) rotate(0deg);">I</span>
+            <span data-14500="transform: translateY(150%) rotate(45deg);"
+              data-14700="transform: translateY(0%) rotate(0deg);">S</span>
+            <span data-14700="transform: translateY(150%) rotate(45deg);"
+              data-14900="transform: translateY(0%) rotate(0deg);">A</span>
+            <strong data-14900="transform: translateY(150%) rotate(45deg);"
+              data-15100="transform: translateY(0%) rotate(0deg);">J</strong>
+            <strong data-15100="transform: translateY(150%) rotate(45deg);"
+              data-15300="transform: translateY(0%) rotate(0deg);">O</strong>
+            <strong data-15300="transform: translateY(150%) rotate(45deg);"
+              data-15500="transform: translateY(0%) rotate(0deg);">U</strong>
+            <strong data-15500="transform: translateY(150%) rotate(45deg);"
+              data-15700="transform: translateY(0%) rotate(0deg);">R</strong>
+            <strong data-15700="transform: translateY(150%) rotate(45deg);"
+              data-15900="transform: translateY(0%) rotate(0deg);">N</strong>
+            <strong data-15900="transform: translateY(150%) rotate(45deg);"
+              data-16100="transform: translateY(0%) rotate(0deg);">E</strong>
+            <strong data-16100="transform: translateY(150%) rotate(45deg);"
+              data-16300="transform: translateY(0%) rotate(0deg);">Y</strong>
           </div>
         </div>
         <!-- //sec3_1 container -->
 
         <div class="sec3_2">
           <div class="container">
-            <div class="sec3_2_title_contain">
-              <div class="sec3_2_title_wrap" data-15000="transform: translateY(200%);"
-                data-15400="transform: translateY(0%);">
-                <div class="sec3_2_title">SKILLS</div>
-                <div class="thin_arrow_icon"></div>
+            <div class="sec3_2_cont">
+              <div class="sec3_2_header_contain">
+                <div class="sec3_2_header_contain_wrap">
+                  <div class="sec3_2_title_wrap">
+                    <div class="sec3_2_title" data-17500="transform: translateY(200%);"
+                      data-18000="transform: translateY(0%);">SKILLS</div>
+                    <div class="thin_arrow_icon" data-17500="transform: translateY(200%);"
+                      data-18000="transform: translateY(0%);"></div>
+                  </div>
+                  <div class="sec3_2_desc">
+                    <p data-18000="transform: translateY(-200%);" data-18500="transform: translateY(0%);">
+                      UXUI 인터렉션 디자인을 전공으로 4년 동안 공부하였고,
+                      그 기초를 바탕으로 프론트엔드 개발자로서 다양한 기술들을 배우고 익히며 더 발전해 나가겠습니다!
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="sec3_2_desc">
-              <p data-15400="transform: translateY(-200%);" data-15800="transform: translateY(0%);">
-                UXUI 인터렉션 디자인을 전공으로 4년 동안 공부하였고,
-                그 기초를 바탕으로 프론트엔드 개발자로서 다양한 기술들을 배우고 익히며 더 발전해 나가겠습니다!
-              </p>
             </div>
             <div class="v-line"></div>
           </div>
@@ -369,92 +650,107 @@
 
     <!-- section4 sub -->
     <!--   skills sub -->
-    <section id="section4" class="section4 sub" data-15500="transform: translatey(150%);"
-      data-17500="transform: translatey(30%);">
-      <div class="sub_contain">
-        <div class="sub_title">
-          <strong>HTML & CSS</strong>
-        </div>
-        <div class="sub_desc">
-          <span>
+    <section id="section4" class="section4 sub">
+      <div class="sec4">
+        <div class="sub_contain_wrap" 
+          data-18000="transform: translatey(150%);"
+          data-22000="transform: translatey(-65%);">
+          <div class="sub_contain">
+            <div class="sub_title">
+              <strong>HTML & CSS</strong>
+            </div>
+            <div class="sub_desc">
+              <span>
+                자바스크립을 정리한 노트와 자바스크립 & 제이쿼리를 이용한
+                Parallax Effect와 Mouse Effect를 정리해 놓았습니다.
+              </span>
+              <span>
+                <a href="https://suna99.github.io/javascript-note/" target='_blank'>
+                  자바스크립 노트 바로가기
+                </a>
+              </span>
+            </div>
+          </div>
+          <!-- //sub_contain1 -->
 
-          </span>
+          <div class="h-line"></div>
+
+          <div class="sub_contain">
+            <div class="sub_title">
+              <strong>JavaScript & jQuery</strong>
+            </div>
+            <div class="sub_desc">
+              <span>
+                자바스크립을 정리한 노트와 자바스크립 & 제이쿼리를 이용한
+                Parallax Effect와 Mouse Effect를 정리해 놓았습니다.
+              </span>
+              <span>
+                <a href="https://suna99.github.io/javascript-note/" target='_blank'>
+                  자바스크립 노트 바로가기
+                </a>
+              </span>
+            </div>
+          </div>
+          <!-- //sub_contain2 -->
+
+          <div class="h-line"></div>
+
+          <div class="sub_contain">
+            <div class="sub_title">
+              <strong>React</strong>
+            </div>
+            <div class="sub_desc">
+              <span>
+                자바스크립을 정리한 노트와 자바스크립 & 제이쿼리를 이용한
+                Parallax Effect와 Mouse Effect를 정리해 놓았습니다.
+              </span>
+              <span>
+                <a href="https://suna99.github.io/javascript-note/" target='_blank'>
+                  자바스크립 노트 바로가기
+                </a>
+              </span>
+            </div>
+          </div>
+          <!-- //sub_contain2 -->
+
+          <div class="h-line"></div>
+
+          <div class="sub_contain">
+            <div class="sub_title">
+              <strong>Android</strong>
+            </div>
+            <div class="sub_desc">
+              <span>
+                android studio를 이용하여 다양한 어플을 만들었습니다. <br />
+                - realm을 통해 db에 저장하기 / 불러오기 / 삭제하기 <br />
+                - 좋아하는 상품 저장 후 불러오기 기능 <br />
+                - firebase를 이용한 백업 기능
+
+              </span>
+              <span>
+                <a href="https://play.google.com/store/apps/developer?id=emotionalLabs" target='_blank'>
+                  구글 플레이스토어 바로가기
+                </a>
+              </span>
+            </div>
+          </div>
+          <!-- //sub_contain3 -->
+
+          <div class="h-line"></div>
+
+          <div class="sub_contain">
+            <div class="sub_title">
+              <strong>Design</strong>
+            </div>
+            <div class="sub_desc">
+              <span>
+                Photoshop / Illustration / XD / Figma
+              </span>
+            </div>
+          </div>
+          <!-- //sub_contain4 -->
         </div>
       </div>
-      <!-- //sub_contain1 -->
-
-      <div class="h-line"></div>
-
-      <div class="sub_contain">
-        <div class="sub_title">
-          <strong>JavaScript & jQuery</strong>
-        </div>
-        <div class="sub_desc">
-          <span>
-            자바스크립을 정리한 노트와 자바스크립 & 제이쿼리를 이용한
-            Parallax Effect와 Mouse Effect를 정리해 놓았습니다.
-          </span>
-          <span>
-            <a href="https://suna99.github.io/javascript-note/" target='_blank'>
-              자바스크립 노트 바로가기
-            </a>
-          </span>
-        </div>
-      </div>
-      <!-- //sub_contain2 -->
-
-      <div class="h-line"></div>
-
-      <div class="sub_contain">
-        <div class="sub_title">
-          <strong>React</strong>
-        </div>
-        <!-- <div class="sub_desc">
-          <span>새로운 변화가 끊임없이 일어나는 웹 환경에서 최신 트렌드에 뒤처지지 않기 위해 스터디 모임과 세미나에 많이 참여하여 핵심 사이트를 벤치마킹하고 업무 시간 외에도 꾸준히
-            부족한 부분과 유행하는 기술들을 공부 하여 자기개발에 힘쓰겠습니다.<br />
-            <br />
-            변화가 끊임없이 일어나는 웹 환경에서 최신 트렌드에 뒤처지지 않기 위해 스터디 모임과 세미나에 많이 참여하였습니다.</span>
-        </div> -->
-      </div>
-      <!-- //sub_contain2 -->
-
-      <div class="h-line"></div>
-
-      <div class="sub_contain">
-        <div class="sub_title">
-          <strong>Android</strong>
-        </div>
-        <div class="sub_desc">
-          <span>
-            android studio를 이용하여 다양한 어플을 만들었습니다. <br />
-            - realm을 통해 db에 저장하기 / 불러오기 / 삭제하기 <br />
-            - 좋아하는 상품 저장 후 불러오기 기능 <br />
-            - firebase를 이용한 백업 기능
-
-          </span>
-          <span>
-            <a href="https://play.google.com/store/apps/developer?id=emotionalLabs" target='_blank'>
-              구글 플레이스토어 바로가기
-            </a>
-          </span>
-        </div>
-      </div>
-      <!-- //sub_contain3 -->
-
-      <div class="h-line"></div>
-
-      <div class="sub_contain">
-        <div class="sub_title">
-          <strong>Design</strong>
-        </div>
-        <div class="sub_desc">
-          <span>
-            Photoshop / Illustration / XD / Figma
-          </span>
-        </div>
-      </div>
-      <!-- //sub_contain4 -->
-
     </section>
     <!-- //section4 sub -->
 
