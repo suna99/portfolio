@@ -644,13 +644,30 @@
   left: 0;
 }
 
+.dot {
+  height: 4px;
+  width: 4px;
+}
+
+.airplane_img_wrap .wave-container:first-child{
+  margin-bottom: 2vh;
+} 
+
+.airplane_img_wrap .wave-container:first-child .dot {
+  background-color: #c1cef5;
+}
+
+.airplane_img_wrap .wave-container:last-child .dot {
+  background-color: #5b7fe8;
+}
+
 .airplane_img_wrap .airplane_path{
   width: 20%;
   height: 100%;
   right: 10%;
   bottom: 0;
   background: url(../svg/airplane_white_line.svg)no-repeat;
-  background-position: left 60%;
+  background-position: left 62%;
   background-size: 60%;
   transform-origin : 50% 10%;
   animation: airplane-animation 1s linear infinite alternate;
@@ -1718,6 +1735,10 @@
   .airplane_img_wrap .airplane_path{
     width: 60%;
   }
+
+  .airplane_img_wrap .wave-container:first-child{
+    margin-bottom: 1vh;
+  } 
 
   .dot{
     height: 2px;
