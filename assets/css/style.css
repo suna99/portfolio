@@ -1,3 +1,5 @@
+@import "../scss/style.scss";
+
 /* scroll */
 .scroll {
   position: fixed;
@@ -276,7 +278,7 @@
 }
 
 /* section */
-.section5,
+/* .section5, */
 .section6,
 .section7,
 .section8{
@@ -958,11 +960,6 @@
 
 /* sec5_2 */
 .sec5_2 {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
   z-index: 5000;
 }
 
@@ -973,27 +970,41 @@
 }
 
 .sec5_2_cont_title {
-  position: absolute;
-  top: 86px;
+  position: relative;
+  height: 22vh;
+  background: #fff;
+  top: 0;
   left: 0;
   z-index: 2000;
-  background: #fff;
+  border-bottom: #1941b8 1vh solid;
 }
 
 .sec5_2_cont_title strong {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
   color: #1941b8;
-  font-size: 80px;
-  display: block;
-  width: 100vw;
-  height: 110px;
-  line-height: 120px;
-  border-bottom: #1941b8 1px solid;
-  padding-left: 34px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3.5vw;
+  line-height: 3.5vw;
+  padding-left: 1.5vw;
+}
+
+.sec5_2_cont_title .progress_bar{
+  width: 103vw;
+  height: 0.5vh;
+  position: absolute;
+  background: #D1D9F1;
+  bottom: -3.5%;
+  left: -1%;
+  border-radius: 100px;
 }
 
 .sec5_2_cont_wrap {
   width: 300vw;
-  height: 100vh;
+  height: 78vh;
   display: flex;
   flex-wrap: nowrap;
   position: relative;
@@ -1002,25 +1013,26 @@
 .sec5_2_cont {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 78vh;
   background: #fff;
-  border-right: #1941b8 1px solid;
+  border-left: #1941b8 1px solid;
 }
 
 .sec5_2_text_wrap {
   position: absolute;
   width: 40vw;
   height: 30vh;
-  right: 8%;
-  bottom: 35%;
+  right: 5%;
+  bottom: 42%;
+  z-index: 5001;
 }
 
 .mac_img {
   position: absolute;
   width: 45%;
   height: 100%;
-  left: 50px;
-  bottom: 80px;
+  left: 7%;
+  bottom: 15%;
   background: url(../svg/mac.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -1030,12 +1042,14 @@
 
 .mac_img_bg {
   position: absolute;
-  width: 100vw;
-  height: 100px;
-  background: #1941b8;
+  width: 60vw;
+  height: 20vh;
+  background: #222;
+  background-position: left bottom;
+  background-size: 100%;
   left: 0;
   bottom: 0;
-  z-index: 5000;
+  z-index: 4999;
 }
 
 /* section6*/

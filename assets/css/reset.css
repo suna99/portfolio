@@ -60,42 +60,76 @@ button {
 }
 
 /* right_cont */
-.right_cont_subtitle span {
-  position: relative;
-  font-weight: 700;
-  font-size: 30px;
-  padding-left: 40px;
+.right_cont_title{
+  width: auto;
+  height: auto;
 }
 
-.right_cont_subtitle::before {
+.right_cont_title strong {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  display: block;
+  font-size: 3vw;
+  color: #fff;
+  -webkit-text-stroke: 2.5px #1941b8;
+  position: relative;
+  padding-left: 2.6vw;
+}
+
+.right_cont_title strong::before {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
-  width: 30px;
-  height: 30px;
+  transform: translateY(-50%);
+  width: 2vw;
+  height: 2vw;
   content: "";
   background: url(../svg/logo_icon.svg);
   background-position: center;
   background-size: contain;
 }
 
-.right_cont_title strong {
-  margin-top: 8px;
-  display: block;
-  font-size: 70px;
+
+.desc_info {
+  margin-top: 0.6vh;
+  display: flex;
+  width: 100%;
+}
+
+.desc_info .second_row{
+  margin-left: 0.5vw;
+}
+
+.desc_info .desc_info_title{
+  width: 10%;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 900;
+  border: #1941b8 1px solid;
+  padding: 0.25vw 0.6vw;
+}
+
+.desc_info .desc_info_desc{
+  width: 40%;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 400;
   color: #fff;
-  -webkit-text-stroke: 2.5px #1941b8;
+  padding: 0.25vw 1vw;
+  border: #1941b8 1px solid;
+  background-color: #1941b8;
+  margin-left: -0.3vw;
 }
 
 .right_cont_desc p {
-  font-family: "Noto Sans KR", sans-serif;
-  margin-top: 8px;
-  font-size: 24px;
-  width: 85%;
-  height: 249px;
-  padding: 34px;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 400;
+  margin-top: 1vh;
+  font-size: 1.2vw;
+  width: 80%;
+  height: auto;
+  padding: 1.2vw;
   line-height: 1.5;
-  border: #1941b8 1px dotted;
+  border: #1941b8 1.8px dotted;
+  border-radius: 0.3vw;
   color: #222;
 }
 
@@ -103,16 +137,15 @@ button {
 .right_cont_btn {
   display: flex;
   width: 100%;
-  margin-top: 24px;
+  margin-top: 2.5vh;
 }
 
 .right_cont_btn .view_btn {
-  width: 180px;
-  height: 50px;
-  border: #1941b8 2px solid;
+  width: 9.5vw;
+  height: 6vh;
+  border: #1941b8 1.5px solid;
   border-radius: 100px;
-  line-height: 50px;
-  margin-left: 20px;
+  line-height: 6vh;
   position: relative;
   background: #fff;
   transition: all 0.3s ease;
@@ -124,19 +157,19 @@ button {
 }
 
 .right_cont_btn .view_btn a {
-  width: 180px;
-  height: 50px;
-  font-size: 20px;
+  width: 9.5vw;
+  height: 6vh;
+  font-size: 1vw;
   font-weight: 700;
   color: #1941b8;
-  padding-left: 30px;
+  padding-left: 1.5vw;
 }
 
 .right_cont_btn .view_btn a::after {
   content: "";
   position: absolute;
-  width: 55px;
-  height: 20px;
+  width: 3vw;
+  height: 2vh;
   background: url(../svg/btn_arrow_icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -145,13 +178,14 @@ button {
 }
 
 .right_cont_btn .code_btn {
-  width: 190px;
-  height: 50px;
-  border: #1941b8 2px solid;
+  width: 9.5vw;
+  height: 6vh;
+  border: #1941b8 1.5px solid;
   border-radius: 100px;
-  line-height: 50px;
-  margin-left: 20px;
+  line-height: 6vh;
+  margin-left: 1.2vw;
   position: relative;
+  background: #fff;
   transition: all 0.3s ease;
 }
 
@@ -161,21 +195,19 @@ button {
 }
 
 .right_cont_btn .code_btn a {
-  width: 190px;
-  height: 50px;
-  font-size: 20px;
+  width: 9.5vw;
+  height: 6vh;
+  font-size: 1vw;
   font-weight: 700;
   color: #1941b8;
-  padding-left: 30px;
-  font-size: 20px;
-  font-weight: 700;
+  padding-left: 1.5vw;
 }
 
 .right_cont_btn .code_btn a::after {
   content: "";
   position: absolute;
-  width: 55px;
-  height: 20px;
+  width: 3vw;
+  height: 2vh;
   background: url(../svg/btn_arrow_icon.svg);
   background-size: contain;
   background-repeat: no-repeat;

@@ -57,7 +57,7 @@ function scroll() {
     document.querySelector(".section4").style.zIndex = '4000';
   }
 
-  if (scrollTop < 30000 && scrollTop >= 13500) {
+  if (scrollTop < 24400 && scrollTop >= 13500) {
     document.querySelector("#nav").classList.add("change");
   } else {
     document.querySelector("#nav").classList.remove("change");
