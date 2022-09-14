@@ -22,7 +22,7 @@
   }
 }
 
-@keyframes text_line{
+@keyframes text_line {
   from {
     background-size: 0% 60%;
   }
@@ -47,6 +47,15 @@
   }
   100% {
     background-position: -3776px 0px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
   }
 }
 

@@ -8,17 +8,17 @@ const section7 = document.querySelector("#section7");
 const section8 = document.querySelector("#section8");
 
 //버튼 클릭
-document.querySelectorAll(".portfolio_list ul li a").forEach(li => {
-  li.addEventListener("click", e => {
+document.querySelectorAll(".portfolio_list ul li a").forEach((li) => {
+  li.addEventListener("click", (e) => {
     e.preventDefault();
     document.querySelector(li.getsAttribute("href")).scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
     });
   });
 });
 
 let s = skrollr.init({
-  smoothScrolling: true
+  smoothScrolling: true,
 });
 
 // scroll
@@ -28,33 +28,45 @@ function scroll() {
   document.querySelector(".scroll").innerHTML = Math.trunc(scrollTop);
 
   if (scrollTop < 2700) {
-    document.querySelector(".cover").style.display = 'block';
+    document.querySelector(".cover").style.display = "block";
   } else {
-    document.querySelector(".cover").style.display = 'none';
+    document.querySelector(".cover").style.display = "none";
   }
 
   if (scrollTop >= 10500) {
-    document.querySelector('.section2 .sub_desc_wrap:first-child p .text_line:first-child').style.animation = "text_line 0.5s ease-in-out 0s forwards";
-    document.querySelector('.section2 .sub_desc_wrap:first-child p .text_line:last-child').style.animation = "text_line 0.5s ease-in-out 1s forwards";
-    document.querySelector('.section2 .sub_desc_wrap:last-child p .text_line').style.animation = "text_line 0.5s ease-in-out 2s forwards";
+    document.querySelector(
+      ".section2 .sub_desc_wrap:first-child p .text_line:first-child"
+    ).style.animation = "text_line 0.5s ease-in-out 0s forwards";
+    document.querySelector(
+      ".section2 .sub_desc_wrap:first-child p .text_line:last-child"
+    ).style.animation = "text_line 0.5s ease-in-out 1s forwards";
+    document.querySelector(
+      ".section2 .sub_desc_wrap:last-child p .text_line"
+    ).style.animation = "text_line 0.5s ease-in-out 2s forwards";
   } else {
-    document.querySelector('.section2 .sub_desc_wrap:first-child p .text_line:first-child').style.animation = "none";
-    document.querySelector('.section2 .sub_desc_wrap:first-child p .text_line:last-child').style.animation = "none";
-    document.querySelector('.section2 .sub_desc_wrap:last-child p .text_line').style.animation = "none";
+    document.querySelector(
+      ".section2 .sub_desc_wrap:first-child p .text_line:first-child"
+    ).style.animation = "none";
+    document.querySelector(
+      ".section2 .sub_desc_wrap:first-child p .text_line:last-child"
+    ).style.animation = "none";
+    document.querySelector(
+      ".section2 .sub_desc_wrap:last-child p .text_line"
+    ).style.animation = "none";
   }
 
   if (scrollTop < 8100 && scrollTop > 2600) {
-    document.querySelector(".header").style.display = 'flex';
-    document.querySelector(".sec1").style.zIndex = '9001';
+    document.querySelector(".header").style.display = "flex";
+    document.querySelector(".sec1").style.zIndex = "9001";
   } else {
-    document.querySelector(".header").style.display = 'none';
-    document.querySelector(".sec1").style.zIndex = '1000';
+    document.querySelector(".header").style.display = "none";
+    document.querySelector(".sec1").style.zIndex = "1000";
   }
 
-  if (scrollTop < 18800 && scrollTop > 16000) {
-    document.querySelector(".section4").style.zIndex = '9001';
+  if (scrollTop < 24000 && scrollTop > 19900) {
+    document.querySelector(".section4").style.zIndex = "9001";
   } else {
-    document.querySelector(".section4").style.zIndex = '4000';
+    document.querySelector(".section4").style.zIndex = "4000";
   }
 
   if (scrollTop < 24400 && scrollTop >= 13500) {
@@ -74,7 +86,6 @@ function scroll() {
   // } else {
   //   document.querySelector(".sec5_1").style.display = 'none';
   // }
-
 
   // document.querySelector("body").addEventListener('mousemove', eyeball);
 
@@ -101,14 +112,14 @@ function stars(count, querySelector) {
 
   while (i < star_count) {
     const star = document.createElement("i");
-    const x = Math.floor(Math.random() * window.innerWidth)
-    const y = Math.floor(Math.random() * window.innerHeight)
+    const x = Math.floor(Math.random() * window.innerWidth);
+    const y = Math.floor(Math.random() * window.innerHeight);
 
     const size = Math.random() * 4;
-    star.style.left = x + 'px';
-    star.style.top = y + 'px';
-    star.style.width = 2 + size + 'px';
-    star.style.height = 2 + size + 'px';
+    star.style.left = x + "px";
+    star.style.top = y + "px";
+    star.style.width = 2 + size + "px";
+    star.style.height = 2 + size + "px";
 
     const duration = Math.random() * 2;
 
@@ -116,7 +127,7 @@ function stars(count, querySelector) {
     star.style.animationDelay = duration + "s";
 
     cloud_wrap.appendChild(star);
-    i++
+    i++;
   }
 }
 stars(50, ".cloud_wrap");
