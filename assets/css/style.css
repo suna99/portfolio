@@ -907,11 +907,11 @@
 
 .sec5_1 .earth {
   position: absolute;
-  top: 40%;
+  top: 39%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 38vw;
-  height: 38vw;
+  width: 33vw;
+  height: 33vw;
   background: url(../img/earth_img02.jpg);
   background-size: cover;
   background-repeat: repeat-x;
@@ -1021,7 +1021,7 @@
   min-width: 100%;
   line-height: 4vw;
   font-size: 4vw;
-  padding-top: 1.1vh;
+  padding-top: 0.5vh;
   animation: marquee 10s linear infinite;
 }
 
@@ -1059,9 +1059,8 @@
 
 .sec5_2_cont_title strong {
   position: absolute;
-  left: 50%;
+  left: 0;
   bottom: 10%;
-  transform: translateX(-50%);
   color: #1941b8;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -1091,12 +1090,12 @@
 .sec5_2_cont {
   position: relative;
   width: 100vw;
-  height: 78vh;
+  height: 100%;
   background: #fff;
   border-left: #1941b8 1px solid;
 }
 
-.sec5_2_content {
+.sec5_2_article {
   width: 100%;
   height: 100%;
   position: relative;
@@ -1109,31 +1108,19 @@
 .sec5_2_text_wrap {
   order: 2;
   z-index: 5001;
-  margin-left: 1vw;
+  margin-left: 4vw;
 }
 
 .mac_img {
   order: 1;
-  width: 56%;
-  height: 66%;
-  background: url(../svg/mac.svg);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: contain;
   z-index: 5001;
-  margin-left: -1vw;
 }
 
-.mac_img_bg {
-  position: absolute;
-  width: 100vw;
-  height: 15vh;
-  background: #c1cef5;
-  background-position: left bottom;
-  background-size: 100%;
-  left: 0;
-  bottom: 0;
-  z-index: 4999;
+.mac_img img{
+  width: 50vw;
+  height: auto;
+  margin-left: -2vw;
+  margin-bottom: -1.5vh;
 }
 
 /* section6*/
@@ -1656,6 +1643,12 @@
   .section2 .sub_desc span {
     font-size: 18px;
   }
+
+  .right_cont_btn .view_btn a,
+  .right_cont_btn .code_btn a{
+    height: 5vh;
+    line-height: 5vh;
+  }
 }
 
 /* Desktop */
@@ -1956,6 +1949,121 @@
   .header .airplane_img_wrap {
     width: 45vw;
     transform-origin: center 90%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  /* section5 */
+  /* sec5_1 */
+  .sec5_1 .earth {
+    width: 65vw;
+    height: 65vw;
+  }
+
+  .move_text_middle .marquee_wrap {
+    bottom: 27%;
+  }
+
+  .move_text_middle .marquee_wrap2 {
+    bottom: 17%;
+  }
+
+  .move_text_middle .marquee span {
+    line-height: 12vw;
+    font-size: 12vw;
+  }
+
+  .move_text_bottom .marquee_wrap {
+    height: 9vh;
+    line-height: 10vh;
+  }
+
+  .move_text_bottom .marquee span {
+    line-height: 8vw;
+    font-size: 8vw;
+  }
+
+  /* sec5_2 */
+  .sec5_2_cont_title {
+    height: 18vh;
+    border-bottom: #1941b8 1px solid;
+  }
+
+  .sec5_2_cont_title strong {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+
+  .sec5_2_cont_title .progress_bar {
+    display: none;
+  }
+
+  .sec5_2_cont_wrap {
+    height: 82vh;
+  }
+
+  .sec5_2_article {
+    flex-direction: column;
+  }
+
+  .mac_img img{
+    width: 60vw;
+    margin-left: 0;
+    margin-bottom: 2.5vh;
+  }
+
+  .sec5_2_text_wrap {
+    margin-left: 0;
+  }
+
+  .right_cont_title strong {
+    font-size: 36px;
+    line-height: 28px;
+    padding-left: 5.4vw;
+    -webkit-text-stroke: 1px #1941b8;
+    margin-bottom: 1.5vh;
+  }
+  
+  .right_cont_title strong::before {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .desc_info .desc_info_title, 
+  .desc_info .desc_info_desc {
+    font-size: 14px;
+    padding: 1.5vw 1.2vw 1vw 1.2vw;
+  }
+
+  .right_cont_desc p {
+    width: 90vw;
+    font-size: 16px;
+    padding: 2vw;
+  }
+
+  .right_cont_btn {
+    margin-top: 4.5vh;
+    justify-content: space-between;
+  }
+
+  .right_cont_btn .view_btn a,
+  .right_cont_btn .code_btn a{
+    width: 44vw;
+    height: 6vh;
+    line-height: 6vh;
+    font-size: 16px;
+    padding-left: 5.5vw;
+  }
+
+  .right_cont_btn .code_btn a {
+    margin-left: 0;
+  }
+
+  .right_cont_btn .view_btn a::after,
+  .right_cont_btn .code_btn a::after{
+    width: 7vw;
+    height: 6vh;
+    transform: translate(200%, -15%);
   }
 }
 
