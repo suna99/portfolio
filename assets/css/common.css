@@ -6,7 +6,7 @@
   padding: 3vw 1.8vw 1.8vw 1.8vw;
 }
 
-.section{
+.section {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -192,83 +192,84 @@
 }
 
 /* right_btn.white */
-.right_cont_btn.white .view_btn {
-  width: 180px;
-  height: 50px;
-  border: #fff 2px solid;
-  background: none;
-  border-radius: 100px;
-  line-height: 50px;
-  margin-left: 20px;
-  position: relative;
-}
-
-.right_cont_btn.white .view_btn:hover {
-  transform: translate(-8px, -8px);
-  box-shadow: 8px 8px #fff;
+.right_cont_btn.white {
+  display: flex;
+  width: 100%;
+  margin-top: 2.5vh;
+  margin-left: 1vw;
 }
 
 .right_cont_btn.white .view_btn a {
-  width: 180px;
-  height: 50px;
-  font-size: 20px;
+  display: block;
+  position: relative;
+  width: 9.5vw;
+  height: 6vh;
+  line-height: 6vh;
+  font-size: 1vw;
   font-weight: 700;
   color: #fff;
-  padding-left: 30px;
+  padding-left: 1.5vw;
+  border: #fff 1.5px solid;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  background: #1941b8;
+}
+
+.right_cont_btn.white .view_btn a:hover {
+  transform: translate(-8px, -8px);
+  box-shadow: 8px 8px #fff;
 }
 
 .right_cont_btn.white .view_btn a::after {
   content: "";
   position: absolute;
-  width: 55px;
-  height: 20px;
+  width: 3vw;
+  height: 2vh;
   background: url(../svg/btn_arrow_icon_white.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   top: 50%;
-  transform: translate(30%, -50%);
-}
-
-.right_cont_btn.white .code_btn {
-  width: 190px;
-  height: 50px;
-  border: #fff 2px solid;
-  border-radius: 100px;
-  line-height: 50px;
-  margin-left: 20px;
-  position: relative;
-}
-
-.right_cont_btn.white .code_btn:hover {
-  transform: translate(-8px, -8px);
-  box-shadow: 8px 8px #fff;
+  right: 10%;
+  transform: translateY(-50%);
 }
 
 .right_cont_btn.white .code_btn a {
-  width: 190px;
-  height: 50px;
-  font-size: 20px;
+  display: block;
+  position: relative;
+  width: 9.5vw;
+  height: 6vh;
+  line-height: 6vh;
+  font-size: 1vw;
   font-weight: 700;
   color: #fff;
-  padding-left: 30px;
-  font-size: 20px;
-  font-weight: 700;
+  padding-left: 1.5vw;
+  border: #fff 1.5px solid;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  background: #1941b8;
+}
+
+.right_cont_btn.white .code_btn a:hover {
+  transform: translate(-8px, -8px);
+  box-shadow: 8px 8px #fff;
 }
 
 .right_cont_btn.white .code_btn a::after {
   content: "";
   position: absolute;
-  width: 55px;
-  height: 20px;
+  width: 3vw;
+  height: 2vh;
   background: url(../svg/btn_arrow_icon_white.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   top: 50%;
-  transform: translate(30%, -50%);
+  right: 10%;
+  transform: translateY(-50%);
 }
 
 @media (max-width: 820px) {
-  
 }
 
 @media screen and (max-width: 767px) {
@@ -279,7 +280,7 @@
     -webkit-text-stroke: 1px #1941b8;
     margin-bottom: 1.5vh;
   }
-  
+
   .right_cont_title strong::before {
     width: 4vw;
     height: 4vw;
@@ -289,7 +290,7 @@
     width: 20vw;
   }
 
-  .desc_info .desc_info_title, 
+  .desc_info .desc_info_title,
   .desc_info .desc_info_desc {
     font-size: 14px;
     padding: 1.5vw 1.2vw 1vw 1.2vw;
@@ -306,30 +307,41 @@
   }
 
   .right_cont_btn .view_btn a,
-  .right_cont_btn .code_btn a{
+  .right_cont_btn .code_btn a {
     width: 24vw;
     height: 6vh;
     line-height: 6vh;
     font-size: 16px;
     padding-left: 2.5vw;
   }
-  
+
   .right_cont_btn .view_btn a::after,
-  .right_cont_btn .code_btn a::after{
+  .right_cont_btn .code_btn a::after {
     width: 7vw;
     height: 6vh;
     transform: translatey(-50%);
   }
 }
 
+@media screen and (max-width: 580px) {
+  .right_cont_desc .desc_info {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 414px) {
+  .right_cont_title strong {
+    font-size: 32px;
+    line-height: 1;
+  }
+
   .right_cont_btn {
     margin-top: 4.5vh;
     justify-content: space-between;
   }
 
   .right_cont_btn .view_btn a,
-  .right_cont_btn .code_btn a{
+  .right_cont_btn .code_btn a {
     width: 44vw;
     height: 6vh;
     line-height: 6vh;
@@ -342,7 +354,7 @@
   }
 
   .right_cont_btn .view_btn a::after,
-  .right_cont_btn .code_btn a::after{
+  .right_cont_btn .code_btn a::after {
     width: 7vw;
     height: 6vh;
     transform: translate(8%, -50%);

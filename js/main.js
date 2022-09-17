@@ -130,5 +130,5 @@ function stars(count, querySelector) {
     i++;
   }
 }
-stars(50, ".cloud_wrap");
-stars(110, ".star_bg");
+stars(10, ".cloud_wrap");
+stars(60, ".star_bg");
