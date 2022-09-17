@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   box-sizing: border-box;
   color: #1941b8;
@@ -25,6 +25,15 @@ ol {
 em,
 address {
   font-style: normal;
+}
+
+p,
+span,
+a {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
 }
 
 /* a 링크 초기화 */

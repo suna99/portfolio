@@ -33,11 +33,12 @@
 }
 
 .right_cont_title strong {
-  font-family: "Poppins", sans-serif;
+  font-family: "Hanson-bold", sans-serif;
   font-weight: 900;
   display: block;
   font-size: 3vw;
   line-height: 3vw;
+  padding-top: 1vh;
   color: #fff;
   -webkit-text-stroke: 0.11vw #1941b8;
   position: relative;

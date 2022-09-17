@@ -51,11 +51,11 @@
 }
 
 @keyframes marquee {
-  0% {
-    transform: translate(0, 0);
+  from {
+    transform: translateX(0);
   }
-  100% {
-    transform: translate(-100%, 0);
+  to {
+    transform: translateX(-50%);
   }
 }
 

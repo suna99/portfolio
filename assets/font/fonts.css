@@ -10,60 +10,61 @@
   font-display: swap;
 }
 
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
 /*고딕 AI*/
-.gothic_100{
-  font-family: 'Gothic A1', sans-serif;
+.gothic_100 {
+  font-family: "Gothic A1", sans-serif;
   font-weight: 100;
 }
 
-.gothic_200{
-  font-family: 'Gothic A1', sans-serif;
+.gothic_200 {
+  font-family: "Gothic A1", sans-serif;
   font-weight: 200;
 }
 
-.gothic_300{
-  font-family: 'Gothic A1', sans-serif;
+.gothic_300 {
+  font-family: "Gothic A1", sans-serif;
   font-weight: 300;
 }
 
-.gothic_400{
-  font-family: 'Gothic A1', sans-serif;
+.gothic_400 {
+  font-family: "Gothic A1", sans-serif;
   font-weight: 400;
 }
 
-.gothic_700{
-  font-family: 'Gothic A1', sans-serif;
+.gothic_700 {
+  font-family: "Gothic A1", sans-serif;
   font-weight: 700;
 }
 
-.gothic_900{
-  font-family: 'Gothic A1', sans-serif;
+.gothic_900 {
+  font-family: "Gothic A1", sans-serif;
   font-weight: 900;
 }
 
 /* poppins */
-.poppins_300{
-  font-family: 'Poppins', sans-serif;
+.poppins_300 {
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
 
-.poppins_400{
-  font-family: 'Poppins', sans-serif;
+.poppins_400 {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 
-.poppins_500{
-  font-family: 'Poppins', sans-serif;
+.poppins_500 {
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
-.poppins_700{
-  font-family: 'Poppins', sans-serif;
+.poppins_700 {
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 
-.poppins_900{
-  font-family: 'Poppins', sans-serif;
+.poppins_900 {
+  font-family: "Poppins", sans-serif;
   font-weight: 900;
 }
-
