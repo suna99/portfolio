@@ -401,6 +401,7 @@
   background-repeat: no-repeat;
   background-size: 63%;
   margin-left: 0.3vw;
+  margin-bottom: 1.5vw;
 }
 
 .header .title span {
@@ -866,10 +867,11 @@
 .sec3_2 .sec3_2_title {
   font-family: "Hanson-bold", sans-serif;
   font-size: 4vw;
-  color: #fff;
   font-weight: 700;
   margin-right: 1vw;
   line-height: 4vw;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 0.09vw #d1d9f1;
 }
 
 .sec3_2 .thin_arrow_icon {
@@ -1241,17 +1243,19 @@
 .sec6_1 .text_line strong {
   font-size: 10vw;
   line-height: 10.5vw;
-  font-weight: 700;
+  font-weight: 900;
   margin: 0 2vw;
   color: #fff;
+  font-family: "Poppins";
 }
 
 .sec6_1 .text_line span {
   font-size: 10vw;
   line-height: 10.5vw;
-  font-weight: 700;
+  font-weight: 900;
   color: rgba(255, 255, 255, 0);
   -webkit-text-stroke: 0.1vw #fff;
+  font-family: "Poppins";
 }
 
 .sec6_1 .line_1,
@@ -1278,7 +1282,7 @@
   justify-content: space-between;
   align-items: center;
   width: 5vw;
-  line-height: 5vw;
+  line-height: 4.2vw;
   height: 100vh;
   left: 0;
   bottom: 0;
@@ -1287,11 +1291,12 @@
 
 .sec6_2_cont_title strong {
   position: relative;
-  font-size: 3.5vw;
+  font-size: 3vw;
   font-weight: 700;
   writing-mode: vertical-rl;
   padding-top: 43vh;
   height: 110vh;
+  font-family: "Hanson-bold";
 }
 
 .sec6_2_cont_title strong::before {
@@ -1304,7 +1309,7 @@
   background-repeat: no-repeat;
   top: 20%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-34%);
 }
 
 .sec6_2_wrap .computer_img_wrap {
@@ -1338,7 +1343,7 @@
   background-position: center top;
   background-size: cover;
   animation: web-animation;
-  animation-duration: 15s;
+  animation-duration: 4s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   z-index: 6001;
@@ -1408,14 +1413,16 @@
 
 .sec7 .sec7_title h2 {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100vw;
-  height: 14vh;
-  line-height: 14vh;
-  padding-left: 1.8vw;
+  height: 80px;
+  line-height: 80px;
   background: #1941b8;
-  color: #fff;
   border-bottom: #fff solid 1px;
-  font-family: "Poppins", sans-serif;
+  /* padding-left: 1.8vw; */
+  color: #fff;
+  font-family: "Hanson-bold", sans-serif;
   font-size: 52px;
   font-weight: 700;
   z-index: 7001;
