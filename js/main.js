@@ -1,15 +1,30 @@
 //버튼 클릭
-document.querySelectorAll(".portfolio_list ul li a").forEach((li) => {
-  li.addEventListener("click", (e) => {
-    e.preventDefault();
-    document.querySelector(li.getsAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
-  });
-});
+// document.querySelectorAll(".portfolio_list ul li a").forEach((li) => {
+//   li.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     document.querySelector(li.getsAttribute("href")).scrollIntoView({
+//       behavior: "smooth",
+//     });
+//   });
+// });
 
 let s = skrollr.init({
   smoothScrolling: true,
+});
+
+menu
+$(document).ready(function () {
+  s = skrollr.init({
+    forceHeight: false,
+    smoothScrolling: true,
+    smoothScrollingDuration: 150
+  });
+
+  skrollr.menu.init(s, {
+    easing: 'outCubic',
+    animate: true,
+    duration: 1000
+  });
 });
 
 // scroll
@@ -78,31 +93,3 @@ function scroll() {
   requestAnimationFrame(scroll);
 }
 scroll();
-
-function stars(count, querySelector) {
-  const star_count = count;
-  const cloud_wrap = document.querySelector(querySelector);
-  let i = 0;
-
-  while (i < star_count) {
-    const star = document.createElement("i");
-    const x = Math.floor(Math.random() * window.innerWidth);
-    const y = Math.floor(Math.random() * window.innerHeight);
-
-    const size = Math.random() * 4;
-    star.style.left = x + "px";
-    star.style.top = y + "px";
-    star.style.width = 2 + size + "px";
-    star.style.height = 2 + size + "px";
-
-    const duration = Math.random() * 2;
-
-    star.style.animationDuration = 2 + duration + "s";
-    star.style.animationDelay = duration + "s";
-
-    cloud_wrap.appendChild(star);
-    i++;
-  }
-}
-// stars(10, ".cloud_wrap");
-// stars(60, ".star_bg");
