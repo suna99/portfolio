@@ -2,6 +2,15 @@ let s = skrollr.init({
   smoothScrolling: true,
 });
 
+document.querySelectorAll(".portfolio_list ul li a").forEach((li) => {
+  li.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector(li.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
 // scroll
 function scroll() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -18,9 +27,11 @@ function scroll() {
     document.querySelector(
       ".section2 .sub_desc_wrap:first-child p .text_line:first-child"
     ).style.animation = "text_line 0.5s ease-in-out 0s forwards";
+
     document.querySelector(
       ".section2 .sub_desc_wrap:first-child p .text_line:last-child"
     ).style.animation = "text_line 0.5s ease-in-out 1s forwards";
+
     document.querySelector(
       ".section2 .sub_desc_wrap:last-child p .text_line"
     ).style.animation = "text_line 0.5s ease-in-out 2s forwards";
@@ -28,9 +39,11 @@ function scroll() {
     document.querySelector(
       ".section2 .sub_desc_wrap:first-child p .text_line:first-child"
     ).style.animation = "none";
+
     document.querySelector(
       ".section2 .sub_desc_wrap:first-child p .text_line:last-child"
     ).style.animation = "none";
+
     document.querySelector(
       ".section2 .sub_desc_wrap:last-child p .text_line"
     ).style.animation = "none";
@@ -53,18 +66,11 @@ function scroll() {
   }
 
   // nav.change
-  if (scrollTop < 24400 && scrollTop > 13500) {
+  if (scrollTop >= 13500 && scrollTop < 24400) {
     document.querySelector("#nav").classList.add("change");
   } else {
     document.querySelector("#nav").classList.remove("change");
   }
-
-  if (scrollTop < 40000 && scrollTop >= 37500) {
-    document.querySelector("#nav").classList.add("change");
-  } else {
-    document.querySelector("#nav").classList.remove("change");
-  }
-
   requestAnimationFrame(scroll);
 }
 scroll();
