@@ -1,30 +1,5 @@
-//버튼 클릭
-// document.querySelectorAll(".portfolio_list ul li a").forEach((li) => {
-//   li.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     document.querySelector(li.getsAttribute("href")).scrollIntoView({
-//       behavior: "smooth",
-//     });
-//   });
-// });
-
 let s = skrollr.init({
   smoothScrolling: true,
-});
-
-menu
-$(document).ready(function () {
-  s = skrollr.init({
-    forceHeight: false,
-    smoothScrolling: true,
-    smoothScrollingDuration: 150
-  });
-
-  skrollr.menu.init(s, {
-    easing: 'outCubic',
-    animate: true,
-    duration: 1000
-  });
 });
 
 // scroll
