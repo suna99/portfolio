@@ -110,6 +110,7 @@
 #active:checked ~ .wrapper {
   right: 0;
 }
+
 .menu-btn {
   position: absolute;
   z-index: 10002;
@@ -124,12 +125,13 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+
 .menu-btn span,
 .menu-btn:before,
 .menu-btn:after {
   content: "";
   position: absolute;
-  top: calc(50% - 1px);
+  top: 35%;
   left: 30%;
   width: 40%;
   border-bottom: 3px solid #1941b8;

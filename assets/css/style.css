@@ -14,7 +14,7 @@
 }
 
 /* layout */
-.cover {
+/* .cover {
   height: 2800;
 }
 
@@ -23,36 +23,36 @@
 }
 
 #section1 {
-  height: 1700;
+  height: 1700px;
 }
 
 #section2 {
-  height: 4500;
+  height: 4500px;
 }
 
 #section3 {
-  height: 6500;
+  height: 6500px;
 }
 
 #section4 {
-  height: 3500;
+  height: 3500px;
 }
 
 #section5 {
-  height: 7500;
+  height: 7500px;
 }
 
 #section6 {
-  height: 6500;
+  height: 6500px;
 }
 
 #section7 {
-  height: 3000;
+  height: 3000px;
 }
 
 #footer {
-  height: 1000;
-}
+  height: 1000px;
+} */
 
 /* cover */
 .text_wrap {
