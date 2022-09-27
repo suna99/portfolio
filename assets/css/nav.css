@@ -1,3 +1,9 @@
+.hidden {
+  height:100%; 
+  min-height:100%; 
+  overflow:hidden !important; 
+  touch-action:none;}
+
 /* pc + tablet nav */
 #nav {
   position: fixed;
@@ -84,6 +90,22 @@
   color: #fff;
 }
 
+#nav.change .menu-btn {
+  position: absolute;
+  z-index: 10002;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
 #nav.change .menu-btn span,
 #nav.change .menu-btn:before,
 #nav.change .menu-btn:after {
@@ -114,8 +136,8 @@
 .menu-btn {
   position: absolute;
   z-index: 10002;
-  right: 20px;
-  top: 20px;
+  right: 3%;
+  top: 18px;
   height: 50px;
   width: 50px;
   text-align: center;
@@ -142,14 +164,6 @@
 }
 .menu-btn:after {
   transform: translateY(8px);
-}
-
-.close {
-  z-index: 10001;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  transition: background 0.6s;
 }
 
 /* closing animation */
@@ -179,9 +193,10 @@
   margin: 15px 0;
 }
 .wrapper ul li a {
-  width: 20vw;
+  font-family: "Montserrat";
+  width: 25vw;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 2vw;
   font-weight: 500;
   padding: 5px 30px;
   color: #fff;
@@ -237,10 +252,12 @@ input[type="checkbox"] {
 #active:checked ~ .wrapper ul li a {
   opacity: 1;
 }
+
 .wrapper ul li a {
   transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translateX(100px);
 }
+
 #active:checked ~ .wrapper ul li a {
   transform: none;
   transition-timing-function: ease, cubic-bezier(0.1, 1.3, 0.3, 1);

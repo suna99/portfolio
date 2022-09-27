@@ -2,68 +2,6 @@ let s = skrollr.init({
   smoothScrolling: true,
 });
 
-// document.querySelectorAll(".portfolio_list ul li a").forEach((li) => {
-//   li.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     document.querySelector(li.getAttribute("href")).scrollIntoView({
-//       behavior: "smooth",
-//     });
-//   });
-// });
-
-document.querySelector("a.aboutMe").addEventListener("click", (e) => {
-  e.preventDefault();
-  window.scrollTo({
-    top: 12000,
-    left: 0,
-    behavior: "smooth",
-  });
-});
-
-document.querySelector("a.skills").addEventListener("click", (e) => {
-  e.preventDefault();
-  window.scrollTo({
-    top: 19000,
-    left: 0,
-    behavior: "smooth",
-  });
-});
-
-document.querySelector("a.javascript").addEventListener("click", (e) => {
-  e.preventDefault();
-  window.scrollTo({
-    top: 26000,
-    left: 0,
-    behavior: "smooth",
-  });
-});
-
-document.querySelector("a.siteWorks").addEventListener("click", (e) => {
-  e.preventDefault();
-  window.scrollTo({
-    top: 33000,
-    left: 0,
-    behavior: "smooth",
-  });
-});
-
-document.querySelector("a.frontEnd").addEventListener("click", (e) => {
-  e.preventDefault();
-  window.scrollTo({
-    top: 37500,
-    left: 0,
-    behavior: "smooth",
-  });
-});
-
-document.querySelector("a.footer").addEventListener("click", (e) => {
-  e.preventDefault();
-  window.scrollTo({
-    top: 41000,
-    left: 0,
-    behavior: "smooth",
-  });
-});
 
 // scroll
 function scroll() {
@@ -80,15 +18,15 @@ function scroll() {
   if (scrollTop >= 10500) {
     document.querySelector(
       ".section2 .sub_desc_wrap:first-child p .text_line:first-child"
-    ).style.animation = "text_line 0.5s ease-in-out 0s forwards";
+    ).style.animation = "textLine 0.5s ease-in-out 0s forwards";
 
     document.querySelector(
       ".section2 .sub_desc_wrap:first-child p .text_line:last-child"
-    ).style.animation = "text_line 0.5s ease-in-out 1s forwards";
+    ).style.animation = "textLine 0.5s ease-in-out 1s forwards";
 
     document.querySelector(
       ".section2 .sub_desc_wrap:last-child p .text_line"
-    ).style.animation = "text_line 0.5s ease-in-out 2s forwards";
+    ).style.animation = "textLine 0.5s ease-in-out 2s forwards";
   } else {
     document.querySelector(
       ".section2 .sub_desc_wrap:first-child p .text_line:first-child"
@@ -127,4 +65,12 @@ function scroll() {
   }
   requestAnimationFrame(scroll);
 }
+
+// function animation() {
+//   document.querySelector(".transition").classList.add("active");
+//   setTimeout(() => {
+//     document.querySelector(".transition").classList.remove("active");
+//   }, 5000);
+// }
+
 scroll();

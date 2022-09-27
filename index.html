@@ -61,6 +61,11 @@
   <body>
     <div class="scroll">1000</div>
 
+    <!-- transition -->
+    <div class="transition"></div>
+    <!-- //transition -->
+
+    <!-- desktop_nav -->
     <nav
       id="nav"
       class="nav"
@@ -72,23 +77,23 @@
         <strong class="logo_txt">CHOISUNA - PORTFOLIO</strong>
       </div>
 
-      <input type="checkbox" id="active" />
+      <input type="checkbox" id="active" class="menu"/>
       <label for="active" class="menu-btn"><span></span></label>
-      <label for="active" class="close"></label>
       <div class="wrapper">
         <ul>
-          <li><a href="#">01. ABOUT ME</a></li>
-          <li><a href="#">02. SKILLS</a></li>
-          <li><a href="#">03. JAVASCRIPT</a></li>
-          <li><a href="#">04. SITE WORKS</a></li>
-          <li><a href="#">05. FRONT-END</a></li>
-          <li><a href="#">06. THANK YOU</a></li>
+          <li><a href="#aboutMe" class="aboutMe">ABOUT ME</a></li>
+          <li><a href="#skills" class="skills">SKILLS</a></li>
+          <li><a href="#javascript" class="javascript">JAVASCRIPT</a></li>
+          <li><a href="#siteWorks" class="siteWorks">SITE WORKS</a></li>
+          <li><a href="#frontEnd" class="frontEnd">FRONT-END</a></li>
+          <li><a href="#footer" class="footer">THANK YOU</a></li>
         </ul>
       </div>
       <!-- //side_menu -->
     </nav>
     <!-- //desktop_nav -->
 
+    <!-- mobile_nav -->
     <nav id="mobile_nav" class="mobile_nav">
       <div class="logo_cont">
         <div class="logo_icon"></div>
@@ -100,6 +105,7 @@
     </nav>
     <!-- //mobile_nav -->
 
+    <!-- cover -->
     <div
       class="cover section"
       data-100="transform: scale(1); opacity: 1;"
@@ -316,6 +322,7 @@
       </div>
     </header>
 
+    <!-- main -->
     <main id="main">
       <!-- section1 -->
       <!--  about me img-->
@@ -1564,12 +1571,13 @@
       </section>
       <!-- //section7 -->
     </main>
+    <!-- //main -->
 
     <!-- //footer -->
     <!--   thanks -->
     <footer
       id="footer"
-      class="footer section"
+      class="section"
       data-39000="transform: translatey(200%);"
       data-40000="transform: translatey(0%);>"
     >
@@ -1644,6 +1652,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

@@ -13,46 +13,16 @@
   z-index: 20000;
 }
 
-/* layout */
-/* .cover {
-  height: 2800;
+/* transition */
+.transition.active{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: #1941b8;
+  z-index: 99999;
+  animation: reveal 1s cubic-bezier(0.77, 0, 0.18, 1);
 }
-
-#header {
-  height: 3000;
-}
-
-#section1 {
-  height: 1700px;
-}
-
-#section2 {
-  height: 4500px;
-}
-
-#section3 {
-  height: 6500px;
-}
-
-#section4 {
-  height: 3500px;
-}
-
-#section5 {
-  height: 7500px;
-}
-
-#section6 {
-  height: 6500px;
-}
-
-#section7 {
-  height: 3000px;
-}
-
-#footer {
-  height: 1000px;
-} */
 
 /* cover */
 .text_wrap {
@@ -654,7 +624,7 @@
   background-position: left 62%;
   background-size: 60%;
   /* transform-origin: 50% 10%; */
-  animation: airplane-animation 1s linear infinite alternate;
+  animation: airplaneMove 1s linear infinite alternate;
 }
 
 .sec3_1 .text_wrap {
@@ -907,7 +877,7 @@
   background-size: cover;
   background-repeat: repeat-x;
   border-radius: 50%;
-  animation: animateEarth 30s linear infinite;
+  animation: earthRotation 30s linear infinite;
   filter: grayscale(0.3);
   box-shadow: 10px 10px 20px 8px rgba(0, 0, 0, 0.25);
 }
@@ -1235,7 +1205,7 @@
   background: url(../img/web_standard_img.png) no-repeat;
   background-position: center top;
   background-size: cover;
-  animation: web-animation;
+  animation: webScroll;
   animation-duration: 4s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -1429,7 +1399,7 @@
 }
 
 /* footer */
-.footer {
+#footer {
   background: #fff;
   z-index: 7000;
 }
@@ -1483,7 +1453,7 @@
   position: relative;
   z-index: 7003;
   object-fit: contain;
-  animation: animationCircleTxt 18s linear infinite;
+  animation: CircleTxt 18s linear infinite;
 }
 
 .footer_wrap .top_wrap .airplane_img img {

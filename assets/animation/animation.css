@@ -1,9 +1,19 @@
-@keyframes movebg {
+@keyframes reveal {
   0% {
-    background-position: 0 bottom;
+    width: 0vw;
+    right: 0;
+  }
+  10% {
+    width: 100vw;
+    right: 0;
+  }
+  90% {
+    width: 100vw;
+    right: 0;
   }
   100% {
-    background-position: 1813.17px bottom;
+    width: 0vw;
+    right: 100%;
   }
 }
 
@@ -22,16 +32,18 @@
   }
 }
 
-@keyframes text_line {
-  from {
-    background-size: 0% 60%;
+/* header : cloud-animation */
+@keyframes movebg {
+  0% {
+    background-position: 0 bottom;
   }
-  to {
-    background-size: 100% 60%;
+  100% {
+    background-position: 1813.17px bottom;
   }
 }
 
-@keyframes airplane-animation {
+/* sec3_1 : airplane */
+@keyframes airplaneMove {
   0% {
     transform: translateY(0%);
   }
@@ -41,7 +53,7 @@
   }
 }
 
-@keyframes animateEarth {
+@keyframes earthRotation {
   0% {
     background-position: 0px 0px;
   }
@@ -59,7 +71,7 @@
   }
 }
 
-@keyframes web-animation {
+@keyframes webScroll {
   0%,100% {
     background-position: center top;
   }
@@ -68,7 +80,16 @@
   }
 }
 
-@keyframes animationCircleTxt {
+@keyframes textLine {
+  from {
+    background-size: 0% 60%; 
+  } 
+  to {
+    background-size: 100% 60%;
+  }
+}
+
+@keyframes CircleTxt {
   0% {
     transform: rotate(0deg);
   }
