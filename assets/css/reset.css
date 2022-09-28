@@ -12,7 +12,6 @@ body {
   height: 100vh;
   position: relative;
   overflow-x: hidden;
-  touch-action:none;
 }
 
 /* 블릿기호 초기화 */
