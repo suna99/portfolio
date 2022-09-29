@@ -1,7 +1,8 @@
+
+
 let s = skrollr.init({
   smoothScrolling: true,
 });
-
 
 // scroll
 function scroll() {
@@ -66,11 +67,45 @@ function scroll() {
   requestAnimationFrame(scroll);
 }
 
-// function animation() {
-//   document.querySelector(".transition").classList.add("active");
-//   setTimeout(() => {
-//     document.querySelector(".transition").classList.remove("active");
-//   }, 5000);
-// }
+// typing loading
+let typed = new Typed(".auto-type", {
+  strings: ["Thinking", "Drawing", "Coding"],
+  typeSpeed: 50,
+  backSpeed: 40,
+  loop: true
+});
+
+// image loder
+function imagesProgress() {
+  var $container = $("#progress"),
+    $progressText = $container.find(".progress-text"),
+    imgLoad = imagesLoaded("body"),
+    imgTotal = imgLoad.images.length,
+    imgLoaded = 0,
+    current = 0,
+    progressTimer = setInterval(updateProgress, 2000 / 60);
+
+  imgLoad.on("progress", function () {
+    imgLoaded++;
+  });
+
+  function updateProgress() {
+    var target = (imgLoaded / imgTotal) * 100;
+
+
+    current += (target - current) * 0.1;
+    $progressText.text(Math.floor(current) + '%');
+
+    if (current >= 100) {
+      clearInterval(progressTimer);
+      $container.animate({ opacity: '0' }, 1500, 'easeInOutQuint').animate({ top: '-100%' }, 1500);
+    }
+    if (current > 99.9) {
+      current = 100;
+    };
+  };
+};
+
+imagesProgress();
 
 scroll();

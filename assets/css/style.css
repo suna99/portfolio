@@ -13,15 +13,51 @@
   z-index: 20000;
 }
 
-/* transition */
-.transition.active{
-  position: fixed;
-  top: 0;
-  right: 0;
+/* progress */
+.progress {
+	background: #1941b8; 
+  color: #fff;
+	width: 100vw; 
   height: 100vh;
-  background: #1941b8;
+	position: fixed; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 99999;
-  animation: reveal 1s cubic-bezier(0.77, 0, 0.18, 1);
+	animation: progress 0.5s ease;
+}
+
+.loader {
+  position: relative;
+}
+
+.loader h2,
+.loader h2 .auto-type{
+  position: relative;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.loader h2 .auto-type{
+  color: rgb(243, 255, 105);
+}
+
+.typed-cursor {
+  color:rgb(243, 255, 105);
+}
+
+
+.progress-text {
+	display: block; 
+  font: 16px; 
+  margin-top: 20px; 
+  text-align: center; 
+  font-weight: 400;
+  width: 100%;
+  color: #fff;
 }
 
 /* cover */
