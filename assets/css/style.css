@@ -1473,10 +1473,10 @@
 
 .footer_wrap .top_wrap .circle_wrap {
   position: absolute;
-  width: 20vw;
-  height: 20vw;
+  width: 15vw;
+  height: 15vw;
   top: 60%;
-  right: 15%;
+  right: 10%;
   transform: translateY(-50%);
   z-index: 7005;
   border-radius: 50%;
@@ -1484,8 +1484,8 @@
 }
 
 .footer_wrap .top_wrap .circle_txt img {
-  width: 20vw;
-  height: 20vw;
+  width: 15vw;
+  height: 15vw;
   position: relative;
   z-index: 7003;
   object-fit: contain;
@@ -1493,8 +1493,8 @@
 }
 
 .footer_wrap .top_wrap .airplane_img img {
-  width: 20vw;
-  height: 20vw;
+  width: 15vw;
+  height: 15vw;
   position: relative;
   z-index: 7002;
   object-fit: contain;
@@ -1743,7 +1743,9 @@
   }
 
   .header .title span {
-    -webkit-text-stroke: 0.25vw #1941b8;
+    text-shadow: -1.5px -1.5px 0 #1941b8, 1.5px -1.5px 0 #1941b8,
+    -1.5px 1.5px 0 #1941b8, 1.5px 1.5px 0 #1941b8;
+  -webkit-font-smoothing: antialiased;
   }
 
   .header .header_title_wrap {

@@ -98,7 +98,7 @@ function imagesProgress() {
 
     if (current >= 100) {
       clearInterval(progressTimer);
-      $container.animate({ opacity: '0' }, 1500, 'easeInOutQuint').animate({ top: '-100%' }, 1500);
+      $container.animate({ opacity: '0' }, 1000, 'easeInOutQuint').animate({ top: '-100%' }, 1000);
     }
     if (current > 99.9) {
       current = 100;
