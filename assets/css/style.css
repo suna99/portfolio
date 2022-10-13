@@ -1258,8 +1258,25 @@
   background: url(../img/mega_box_img.png) no-repeat;
   background-position: center top;
   background-size: cover;
-  animation: web-animation;
-  animation-duration: 11s;
+  animation: webScroll;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  z-index: 6001;
+}
+
+.sec6_2_wrap .web_img.web3 {
+  position: absolute;
+  left: 10%;
+  bottom: 45%;
+  width: 35vw;
+  aspect-ratio: 16/9;
+  background-color: #222;
+  background: url(../img/space-react_img.png) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  animation: webScroll;
+  animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   z-index: 6001;
@@ -2131,6 +2148,7 @@
     border-left: none;
     border-bottom: 1px dashed #c1cef5;
     order: 1;
+    object-position: right;
   }
 
   .cont_2 .sec7_cont_wrap {
