@@ -1,8 +1,6 @@
 /* scroll */
-.scroll {
+/* .scroll {
   position: fixed;
-  left: 10px;
-  top: 10px;
   width: 50px;
   height: 50px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -11,7 +9,7 @@
   line-height: 50px;
   color: #fff;
   z-index: 20000;
-}
+} */
 
 /* progress */
 .progress {
@@ -20,6 +18,8 @@
 	width: 100vw; 
   height: 100vh;
 	position: fixed; 
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
