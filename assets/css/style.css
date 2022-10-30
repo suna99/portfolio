@@ -1238,7 +1238,7 @@
   width: 35vw;
   aspect-ratio: 16/9;
   background-color: #222;
-  background: url(../img/web_standard_img.png) no-repeat;
+  background: url(../img/web_standard_img.jpg) no-repeat;
   background-position: center top;
   background-size: cover;
   animation: webScroll;
@@ -1255,7 +1255,7 @@
   width: 35vw;
   aspect-ratio: 16/9;
   background-color: #222;
-  background: url(../img/mega_box_img.png) no-repeat;
+  background: url(../img/mega_box_img.jpg) no-repeat;
   background-position: center top;
   background-size: cover;
   animation: webScroll;
@@ -1272,7 +1272,7 @@
   width: 35vw;
   aspect-ratio: 16/9;
   background-color: #222;
-  background: url(../img/space-react_img.png) no-repeat;
+  background: url(../img/space-react_img.jpg) no-repeat;
   background-position: center top;
   background-size: cover;
   animation: webScroll;
