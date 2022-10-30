@@ -1,2 +1,2 @@
 # portfolio
-https://suna99.github.io/portfolio.github.io/
+https://suna-choi-portfolio.netlify.app/
